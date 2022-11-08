@@ -1,0 +1,39 @@
+.card {
+    height: 500px;
+    width: 406px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 40px 0px #877CCA26;
+}
+
+.image {
+    height: 226.46092224121094px;
+    width: 406px;
+    border-radius: 10px;
+}
+
+.title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1E2123;
+    margin-top: 30px;
+    padding-left: 20.5px;
+    height: 38px;
+    width: 357.544921875px;
+}
+
+.description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #686868;
+    margin-top: 15px;
+    padding-left: 20.5px;
+    height: 85px;
+    width: 365.544921875px;
+    border-bottom: 2px solid #F8F8F8;
+}

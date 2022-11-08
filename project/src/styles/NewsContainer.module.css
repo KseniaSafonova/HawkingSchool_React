@@ -1,0 +1,10 @@
+.container {
+    height: 1560px;
+    width: 1440px;
+    display: grid;
+    grid-template-columns: 406px 406px 406px;
+    grid-template-rows: 500px;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-left: 70px;
+}
