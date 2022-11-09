@@ -7,4 +7,22 @@
     column-gap: 30px;
     row-gap: 30px;
     margin-left: 70px;
+    /* position: absolute;
+    z-index: 1; */
+}
+
+.topBlock {
+    display: flex;
+}
+
+.background {
+    background: linear-gradient(90deg, #94AFFF 0%, #4E64F9 94.5%);
+    opacity: 0.1;
+    border-radius: 40px;
+    /* width: 848.5px;
+    height: 999.21435546875px; */
+    border-radius: 40px;
+    margin-left: 641px;
+    /* position: absolute;
+    z-index: 0; */
 }

@@ -1,7 +1,9 @@
+import styles from './../styles/HeaderNav.module.css';
+
 const NavButton = () => {
     return (
         <>
-            <button>+ Разместить объявление</button>
+            <button className={styles.button}>+ Разместить объявление</button>
         </>
     )
 }

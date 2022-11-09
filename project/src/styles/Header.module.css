@@ -2,4 +2,49 @@
     height: 40px;
     width: 1440px;
     background-color: #F8F8F8;
+    font-family: 'Inter';
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8291A3;
+    text-decoration: none;
+}
+
+.login {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #664EF9;
+    text-decoration: none;
+}
+
+.leftBlock {
+    margin-left: 23px;
+}
+
+.leftBlock a {
+    margin-left: 57px;
+}
+
+.rightBlock {
+    margin-left: 244px;
+}
+
+.rightBlock a {
+    margin-left: 40px;
+}
+
+.heart {
+    margin-left: 11px;
+    height: 14.23486328125px;
+    width: 16px;
+    color: #8291A3;
 }

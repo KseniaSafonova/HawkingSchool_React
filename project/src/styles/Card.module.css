@@ -37,3 +37,41 @@
     width: 365.544921875px;
     border-bottom: 2px solid #F8F8F8;
 }
+
+.bottomBlock {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.date {
+    height: 37px;
+    width: 125px;
+    background: #F8F8F8;
+    border-radius: 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #8291A3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.button {
+    height: 37px;
+    width: 81px;
+    padding: 10px 15px 10px 15px;
+    background: rgba(102, 78, 249, 0.1);
+    border-radius: 17px;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #664EF9;
+    margin-right: 20px;
+}

@@ -6,8 +6,10 @@ const Card = (props) => {
             <img className={styles.image} src={props.image} alt="" />
             <div className={styles.title}>{props.title}</div>
             <div className={styles.description}>{props.description}</div>
-            <div className={styles.date}>{props.date}</div>
-            <button>Читать</button>
+            <div className={styles.bottomBlock}>
+                <div className={styles.date}>{props.date}</div>
+                <button className={styles.button}>Читать</button>
+            </div>
         </div>
     )
 }
