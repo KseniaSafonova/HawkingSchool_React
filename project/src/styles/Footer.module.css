@@ -92,3 +92,36 @@
     color: #8291A3;
     text-decoration: none;
 }
+
+.bottomBlock {
+    display: flex;
+}
+
+.socialNetworks {
+    margin-left: 407px;
+    margin-top: -55px;
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1E2123;
+}
+
+.socialNetworks div {
+    margin-left: 5px;
+    margin-top: -5px;
+}
+
+.socialNetworks img {
+    margin-left: 23px;
+}
+
+.payment {
+    margin-left: 274px;
+    margin-top: -70px;
+}
+
+.payment img {
+    margin-left: 15px;
+}
