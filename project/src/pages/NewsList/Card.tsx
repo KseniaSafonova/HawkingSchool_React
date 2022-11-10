@@ -1,4 +1,4 @@
-import styles from './../styles/Card.module.css'
+import styles from '../../styles/Card.module.css';
 //@ts-ignore
 const Card = (props) => {
     return (

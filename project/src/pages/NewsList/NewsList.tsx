@@ -1,7 +1,7 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import HeaderNav from "./components/HeaderNav";
-import NewsContainer from "./components/NewsContainer";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import HeaderNav from "../../components/HeaderNav";
+import NewsContainer from "./NewsContainer";
 
 
 let cards = [

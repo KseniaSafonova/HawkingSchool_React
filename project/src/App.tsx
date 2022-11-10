@@ -1,4 +1,4 @@
-import NewsList from './NewsList';
+import NewsList from './pages/NewsList/NewsList';
 
 //@ ts-ignore
 function App() {
