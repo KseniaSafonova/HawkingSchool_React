@@ -1,5 +1,5 @@
 import Card from "./Card";
-import styles from '../../styles/NewsContainer.module.css';
+import styles from '../../styles/NewsList/NewsContainer.module.css';
 //@ts-ignore
 const NewsContainer = ({ cards }) => {
     return (

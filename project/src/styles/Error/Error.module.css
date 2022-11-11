@@ -1,0 +1,23 @@
+.background {
+    background-image: url('../../images/background.png');
+    height: 599px;
+    z-index: 1;
+    position: relative;
+    /* margin-top: 0 */
+}
+
+.backgroundd {
+    /* background-image: url('../../images/topImage.png'); */
+    mix-blend-mode: overlay;
+    filter: blur(2.5px);
+    /* opacity: 0.15; */
+    width: 1440px;
+    height: 599px;
+    position: relative;
+    z-index: 2;
+    /* margin-top: 0 */
+}
+
+.block {
+    position: absolute;
+}
