@@ -1,12 +1,26 @@
 import Card from "./Card";
 import styles from '../../styles/NewsList/NewsContainer.module.css';
+import home from '../../images/home.svg';
+import search from '../../images/search.svg';
 //@ts-ignore
 const NewsContainer = ({ cards }) => {
     return (
         <div className={styles.container}>
             <div className={styles.topBlock}>
-                <div>Новости</div>
-                <div><input type="text" /><button>search</button></div>
+                <div>
+                    <div className={styles.link}>
+                        <img src={home} alt="" />
+                        <div className={styles.ellipse}></div>
+                        <div>Новости</div>
+                    </div>
+                    <div className={styles.title}>Новости</div>
+                </div>
+                <div className={styles.search}>
+                    <input type="text" placeholder='Поиск по статьям' />
+                    <button>
+                        <img src={search} alt="" />
+                    </button>
+                </div>
             </div>
             <div className={styles.background}></div>
             <div className={styles.cardContainer}>

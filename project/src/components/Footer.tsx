@@ -10,7 +10,9 @@ import securecode from '../images/securecode.png';
 import belkart from '../images/belkart.png';
 import styles from './../styles/Footer.module.css';
 
+//@ts-ignore
 const Footer = () => {
+    // const logo = require('../images/logo.svg')
     return (
         <>
             <div className={styles.container}>

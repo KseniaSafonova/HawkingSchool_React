@@ -5,8 +5,8 @@ import Error from './pages/Error/Error';
 function App() {
   return (
     <div className="App">
-      {/* <NewsList /> */}
-      <Error />
+      <NewsList />
+      {/* <Error /> */}
     </div>
   );
 }

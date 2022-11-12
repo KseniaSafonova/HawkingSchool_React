@@ -1,7 +1,7 @@
-import logo from './../images/logo.svg';
+import logo from '../images/logo.svg';
 import NavButton from './NavButton';
 import styles from './../styles/HeaderNav.module.css';
-
+//@ts-ignore
 const HeaderNav = () => {
     return (
         <div className={styles.container}>
