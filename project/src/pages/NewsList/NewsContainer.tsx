@@ -2,8 +2,12 @@ import Card from "./Card";
 import styles from '../../styles/NewsList/NewsContainer.module.css';
 import home from '../../images/home.svg';
 import search from '../../images/search.svg';
+import { useState } from "react";
 //@ts-ignore
 const NewsContainer = ({ cards }) => {
+
+    const [inputValue, setInputValue] = useState('Поиск по статьям')
+
     return (
         <div className={styles.container}>
             <div className={styles.topBlock}>
@@ -16,7 +20,7 @@ const NewsContainer = ({ cards }) => {
                     <div className={styles.title}>Новости</div>
                 </div>
                 <div className={styles.search}>
-                    <input type="text" placeholder='Поиск по статьям' />
+                    <input type="text" value={inputValue} onChange={(input) => setInputValue(input.target.value)} />
                     <button>
                         <img src={search} alt="" />
                     </button>
