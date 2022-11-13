@@ -6,7 +6,7 @@ import { useState } from "react";
 //@ts-ignore
 const NewsContainer = ({ cards }) => {
 
-    const [inputValue, setInputValue] = useState('Поиск по статьям')
+    const [inputValue, setInputValue] = useState('')
 
     return (
         <div className={styles.container}>
@@ -20,7 +20,7 @@ const NewsContainer = ({ cards }) => {
                     <div className={styles.title}>Новости</div>
                 </div>
                 <div className={styles.search}>
-                    <input type="text" value={inputValue} onChange={(input) => setInputValue(input.target.value)} />
+                    <input type="text" onChange={(input) => setInputValue(input.target.value)} placeholder='Поиск по статьям' />
                     <button>
                         <img src={search} alt="" />
                     </button>
