@@ -1,0 +1,39 @@
+.container {
+    height: 599px;
+    display: flex;
+}
+
+.backgroundImg {
+    background-image: url('../../images/background.png');
+    height: 599px;
+    width: 1440px;
+    position: absolute;
+}
+
+.topImg {
+    background-image: url('../../images/topImage.png');
+    /* mix-blend-mode: overlay; */
+    filter: blur(2.5px);
+    /* opacity: 0.15; */
+    width: 1440px;
+    height: 599px;
+    position: absolute;
+}
+
+.content {
+    display: flex;
+    position: absolute;
+}
+
+.contentLeft {
+    color: #FFFF;
+    width: 515px;
+}
+
+.contentRight {
+    height: 516px;
+    width: 625px;
+    border-radius: 10px;
+    background-color: #FFFEFE;
+    box-shadow: 0px 20px 40px rgba(39, 95, 158, 0.2);
+}

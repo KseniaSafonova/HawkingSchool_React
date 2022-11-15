@@ -1,13 +1,13 @@
 import logo from '../images/logo.svg';
-import instagram from '../images/instagram.svg';
-import vk from '../images/vk.svg';
-import facebook from '../images/facebook.svg';
-import visa from '../images/visa.png';
-import webpay from '../images/webpay.png';
-import verifiedByVisa from '../images/verifiedByVisa.png';
-import mastercard from '../images/mastercard.png';
-import securecode from '../images/securecode.png';
-import belkart from '../images/belkart.png';
+import instagram from '../images/Footer/instagram.svg';
+import vk from '../images/Footer/vk.svg';
+import facebook from '../images/Footer/facebook.svg';
+import visa from '../images/Footer/visa.png';
+import webpay from '../images/Footer/webpay.png';
+import verifiedByVisa from '../images/Footer/verifiedByVisa.png';
+import mastercard from '../images/Footer/mastercard.png';
+import securecode from '../images/Footer/securecode.png';
+import belkart from '../images/Footer/belkart.png';
 import styles from './../styles/Footer.module.css';
 
 //@ts-ignore
