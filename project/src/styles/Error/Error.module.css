@@ -1,5 +1,7 @@
 .container {
     height: 599px;
+    display: flex;
+
 }
 
 .backgroundImg {
@@ -19,8 +21,10 @@
     position: absolute;
 }
 
-.content {
+.contentLeft {
     position: absolute;
+    margin-left: 189px;
+    margin-top: 175px;
 }
 
 .error {
@@ -40,6 +44,8 @@
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
+    margin-left: 10px;
+    margin-top: 20px;
 }
 
 .button button {
@@ -56,4 +62,29 @@
     align-items: center;
     justify-content: center;
     color: #1E2123;
+    margin-top: 50px;
+}
+
+.contentRight {
+    /* position: absolute; */
+}
+
+.errorNumber {
+    position: absolute;
+    width: 553px;
+    height: 213px;
+    margin-left: 663px;
+    margin-top: 186px;
+}
+
+.pointsRight {
+    position: absolute;
+    margin-top: 459px;
+    margin-left: 1192px;
+}
+
+.pointsLeft {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 96px;
 }
