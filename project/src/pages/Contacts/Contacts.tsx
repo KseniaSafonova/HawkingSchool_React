@@ -12,6 +12,7 @@ import time from '../../images/Contacts/time.svg';
 import viber from '../../images/Contacts/viber.svg';
 import telegram from '../../images/Contacts/telegram.svg';
 import whatsapp from '../../images/Contacts/whatsapp.svg';
+import alert from '../../images/Contacts/alert.svg'
 
 const Contacts = () => {
     return (
@@ -23,29 +24,34 @@ const Contacts = () => {
                 <div className={styles.topImg}></div>
                 <div className={styles.content}>
                     <div className={styles.contentLeft}>
-                        <div>Контакты</div>
-                        <div>Если у Вас есть пожелания, предложения или претензии по организации работы сайта мы всегда рады услышать Ваше мнение.</div>
-                        <div>
+                        <div className={styles.title}>Контакты</div>
+                        <div className={styles.feedback}>Если у Вас есть пожелания, предложения или претензии по организации работы сайта мы всегда рады услышать Ваше мнение.</div>
+                        <div className={styles.address}>
                             <img src={point} alt="" />
-                            220068, РБ, г. Минск, ул. Осипенко, 21, кв.23</div>
-                        <div>
+                            <div>220068, РБ, г. Минск, ул. Осипенко, 21, кв.23</div>
+                        </div>
+                        <div className={styles.phoneNumber}>
                             <img src={phone} alt="" />
-                            +375 29 621-48-33
-                            <img src={viber} alt="viber" />
-                            <img src={telegram} alt="telegram" />
-                            <img src={whatsapp} alt="whatsapp" />
+                            <div>+375 29 621-48-33</div>
+                            <img src={viber} alt="viber" className={styles.viber} />
+                            <img src={telegram} alt="telegram" className={styles.telegram} />
+                            <img src={whatsapp} alt="whatsapp" className={styles.whatsapp} />
                         </div>
-                        <div>
+                        <div className={styles.emailAddress}>
                             <img src={letter} alt="" />
-                            sdaem@sdaem.by</div>
-                        <div>
-                            <img src={time} alt="" />
-                            Режим работы: 08:00-22:00</div>
-                        <div>ИП Шушкевич Андрей Викторович
-                            УНП 192602485 Минским горисполкомом 10.02.2016
+                            <div>sdaem@sdaem.by</div>
                         </div>
-                        <div>Администрация сайта не владеет информацией
-                            о наличии свободных квартир</div>
+                        <div className={styles.workTime}>
+                            <img src={time} alt="" />
+                            <div>Режим работы: 08:00-22:00</div>
+                        </div>
+                        <div className={styles.ip}>ИП Шушкевич Андрей Викторович</div>
+                        <div className={styles.unp}>УНП 192602485 Минским горисполкомом 10.02.2016 </div>
+                        <div className={styles.info}>
+                            <img src={alert} alt="" />
+                            <div>Администрация сайта не владеет информацией
+                                о наличии свободных квартир</div>
+                        </div>
                     </div>
                     <div className={styles.contentRight}>
                         <section>
@@ -63,9 +69,9 @@ const Contacts = () => {
                         <div><button className={styles.button}>Отправить</button></div>
                     </div>
                     <div className={styles.socialNetworks}>
-                        <img src={instagram} alt="instagram" />
-                        <img src={vk} alt="vk" />
-                        <img src={facebook} alt="facebook" />
+                        <div><img src={instagram} alt="instagram" /></div>
+                        <div><img src={vk} alt="vk" /></div>
+                        <div><img src={facebook} alt="facebook" /></div>
                     </div>
                 </div>
             </div >
