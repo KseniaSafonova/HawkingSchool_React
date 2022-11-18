@@ -25,6 +25,14 @@
     color: #1E2123;
 }
 
+.links a:first-child {
+    margin-left: 84px;
+}
+
+.links span {
+    margin-right: 15px;
+}
+
 .button {
     height: 37px;
     width: 224px;
@@ -43,4 +51,10 @@
 
 .button:hover {
     background: linear-gradient(90deg, #867CFC 0%, #6929F3 94.5%);
+}
+
+.point {
+    color: #FFD54F;
+    height: 15px;
+    width: 12.089469909667969px;
 }

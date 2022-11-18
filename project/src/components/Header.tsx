@@ -1,6 +1,6 @@
 import styles from './../styles/Header.module.css';
 import { BiHeart } from 'react-icons/bi';
-import point from '../images/point.svg'
+import { FaMapMarkerAlt } from 'react-icons/fa';
 
 // @ts-igmore
 const Header = () => {
@@ -11,8 +11,8 @@ const Header = () => {
                 <div><a href="" className={styles.link}>Новости</a></div>
                 <div><a href="" className={styles.link}>Размещение и тарифы </a></div>
                 <div><a href="" className={styles.link}>
-                    <img src={point} alt="" />
-                    Объявления на карте
+                    <FaMapMarkerAlt className={styles.point} />
+                    <span>Объявления на карте</span>
                 </a></div>
                 <div>
                     <a href="" className={styles.link}>Контакты</a></div>

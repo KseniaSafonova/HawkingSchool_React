@@ -38,6 +38,8 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 100%;
+    height: 30px;
+    width: 148px;
 }
 
 .feedback {
@@ -91,9 +93,12 @@
     font-size: 14px;
 }
 
-.ip,
-.info {
+.ip {
     margin-top: 30px;
+}
+
+.unp {
+    margin-top: 10px;
 }
 
 .info {
@@ -105,6 +110,7 @@
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    margin-top: 39px;
 }
 
 .info div {
@@ -122,6 +128,8 @@
     margin-top: 77px;
     padding-top: 40px;
     padding-left: 40px;
+    margin-left: 31px;
+    box-sizing: border-box;
 }
 
 .contentRight section {

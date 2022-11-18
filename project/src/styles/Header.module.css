@@ -16,6 +16,19 @@
     text-decoration: none;
 }
 
+.link:hover {
+    color: black;
+}
+
+.link span {
+    margin-left: 5px;
+}
+
+.point {
+    height: 10px;
+    width: 8.059646606445312px;
+}
+
 .login {
     font-family: 'Inter';
     font-style: normal;
@@ -32,21 +45,16 @@
     align-items: center;
 }
 
-/* .leftBlock div {
-    height: 40px;
-} */
-
 .leftBlock div {
     margin-left: 57px;
     height: 40px;
-    display: flex;
-    align-items: center;
-    border-bottom: 3px solid #FFD54F;
+    padding-top: 11px;
+    box-sizing: border-box;
 }
 
-/* .leftBlock div :hover {
-    border: 3px solid #FFD54F;
-} */
+.leftBlock div:hover {
+    border-bottom: 3px solid #FFD54F;
+}
 
 .rightBlock {
     margin-left: 244px;
