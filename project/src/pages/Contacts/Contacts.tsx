@@ -17,8 +17,6 @@ import alert from '../../images/Contacts/alert.svg'
 const Contacts = () => {
     return (
         <>
-            <Header />
-            <HeaderNav />
             <div className={styles.container}>
                 <div className={styles.backgroundImg}></div>
                 <div className={styles.topImg}></div>
@@ -75,7 +73,6 @@ const Contacts = () => {
                     </div>
                 </div>
             </div >
-            <Footer />
         </>
     )
 }

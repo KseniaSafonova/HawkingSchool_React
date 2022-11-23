@@ -19,10 +19,7 @@ let cards = [
 const NewsList = () => {
     return (
         <>
-            <Header />
-            <HeaderNav />
             <NewsContainer cards={cards} />
-            <Footer />
         </>
     )
 }

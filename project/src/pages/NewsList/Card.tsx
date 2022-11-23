@@ -1,4 +1,11 @@
 import styles from '../../styles/NewsList/Card.module.css';
+import {
+    BrowserRouter,
+    Routes,
+    Route,
+    Link
+} from "react-router-dom";
+
 //@ts-ignore
 const Card = (props) => {
     return (
@@ -8,8 +15,10 @@ const Card = (props) => {
             <div className={styles.description}>{props.description}</div>
             <div className={styles.bottomBlock}>
                 <div className={styles.date}>{props.date}</div>
-                <button className={styles.button}>Читать</button>
+                {/* <Link to='/detailNews' className={styles.button}>Читать</Link> */}
             </div>
+
+
         </div>
     )
 }
