@@ -10,7 +10,8 @@ const Card = (props) => {
             <div className={styles.description}>{props.description}</div>
             <div className={styles.bottomBlock}>
                 <div className={styles.date}>{props.date}</div>
-                <Link to={{ pathname: '/detailNews' }} className={styles.button} >Читать</Link>
+                <Link
+                    to='/newsList/1' className={styles.button} >Читать</Link>
             </div>
 
 

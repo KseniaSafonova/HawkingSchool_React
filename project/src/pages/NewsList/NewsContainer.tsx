@@ -30,7 +30,7 @@ const NewsContainer = ({ cards }) => {
             <div className={styles.cardContainer}>
                 {
                     cards.map((card: any) =>
-                        <Card image={require('../../images' + card.image)} title={card.title} description={card.description} date={card.date} />)
+                        <Card image={require('../../images' + card.image)} id={card.id} title={card.title} description={card.description} date={card.date} />)
                 }
             </div >
         </div>

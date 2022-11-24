@@ -12,7 +12,6 @@ import Main from './pages/Main/Main';
 import DetailNews from './pages/DetailNews/DetailNews';
 import NewsList from './pages/NewsList/NewsList';
 import Contacts from './pages/Contacts/Contacts';
-import { isPropertySignature } from 'typescript';
 
 //@ ts-ignore
 function App() {
@@ -24,8 +23,8 @@ function App() {
         {/* <Error /> */}
         <Routes>
           <Route path='/' element={<Main />}></Route>
-          <Route path='/detailNews' element={<DetailNews />}></Route>
           <Route path='/newsList' element={<NewsList />}></Route>
+          <Route path='/newsList/:id' element={<DetailNews />}></Route>
           <Route path='/contacts' element={<Contacts />}></Route>
         </Routes>
         <Footer />
