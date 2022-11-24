@@ -65,7 +65,9 @@
 .button {
     height: 37px;
     width: 81px;
-    padding: 10px 15px 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgba(102, 78, 249, 0.1);
     border-radius: 17px;
     border: none;
@@ -75,4 +77,5 @@
     line-height: 17px;
     color: #664EF9;
     margin-right: 20px;
+    text-decoration: none;
 }

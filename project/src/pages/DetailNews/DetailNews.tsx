@@ -1,7 +1,7 @@
 import styles from '../../styles/DetailNews/DetailNews.module.css';
 import home from '../../images/home.svg';
-
-const DetailNews = () => {
+//@ts-ignore
+const DetailNews = (props) => {
     return (
         <>
             <div className={styles.titleBlock}>
@@ -9,6 +9,7 @@ const DetailNews = () => {
                     <img src={home} alt="" />
                     <div className={styles.ellipse}></div>
                     <div>Новости</div>
+                    {props.title}
                     Детальная новость
                 </div>
             </div>

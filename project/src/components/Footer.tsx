@@ -9,6 +9,10 @@ import mastercard from '../images/Footer/mastercard.png';
 import securecode from '../images/Footer/securecode.png';
 import belkart from '../images/Footer/belkart.png';
 import styles from './../styles/Footer.module.css';
+import {
+    Link
+} from "react-router-dom";
+
 
 //@ts-ignore
 const Footer = () => {
@@ -45,10 +49,10 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className={styles.menuRight}>
-                    <div><a href="">Новости</a></div>
+                    <div><Link to='/newsList' className={styles.link}>Новости</Link></div>
                     <div><a href="">Размещение и тарифы </a></div>
                     <div><a href="">Объявления на карте</a></div>
-                    <div><a href="">Контакты</a></div>
+                    <div><Link to='/contacts' className={styles.link}>Контакты</Link></div>
                 </div>
             </div>
             <div className={styles.bottomBlock}>
