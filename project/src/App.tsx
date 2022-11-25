@@ -13,7 +13,7 @@ import DetailNews from './pages/DetailNews/DetailNews';
 import NewsList from './pages/NewsList/NewsList';
 import Contacts from './pages/Contacts/Contacts';
 
-//@ ts-ignore
+//@ts-ignore
 function App() {
   return (
     <BrowserRouter>

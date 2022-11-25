@@ -1,6 +1,7 @@
 import styles from '../../styles/DetailNews/DetailNews.module.css';
 import home from '../../images/home.svg';
 import { useLocation, useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 let cards = [
     { 'id': '1', 'image': '/image.png', 'title': 'Линия Сталина: суровый отдых в усадьбах на сутки', 'description': 'Чем заняться в выходные? Когда нет безотлагательных домашних дел, а на улице хорошая погода, хочется уехать из города, чтобы сменить обстановку. Например, снять коттедж на сутки для семьи или большой компании друзей. А...', 'date': '14 Января 2008' },
@@ -17,6 +18,12 @@ let cards = [
 //@ts-ignore
 const DetailNews = () => {
     let { id } = useParams();
+    const [news, setNews] = useState(null);
+    useEffect(() => {
+        const currentCard = cards.filter((card) => card.id == id)
+        // setNews(currentCard);
+        console.log(currentCard[0])
+    }, [id])
     return (
         <>
             <div className={styles.titleBlock}>

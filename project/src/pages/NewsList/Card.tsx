@@ -1,5 +1,5 @@
 import styles from '../../styles/NewsList/Card.module.css';
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 //@ts-ignore
 const Card = (props) => {
@@ -11,7 +11,7 @@ const Card = (props) => {
             <div className={styles.bottomBlock}>
                 <div className={styles.date}>{props.date}</div>
                 <Link
-                    to='/newsList/1' className={styles.button} >Читать</Link>
+                    to={`${props.id}`} className={styles.button} >Читать</Link>
             </div>
 
 
