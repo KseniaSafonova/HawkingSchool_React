@@ -35,7 +35,7 @@ const NewsContainer = ({ cards }) => {
                             image={require('../../images' + card.image)}
                             id={card.id}
                             title={card.title}
-                            description={card.description}
+                            descriptionShort={card.descriptionShort}
                             date={card.date}>
                         </Card>)
                 }

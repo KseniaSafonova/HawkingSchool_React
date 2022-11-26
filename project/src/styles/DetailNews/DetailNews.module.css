@@ -1,8 +1,20 @@
 .titleBlock {
     height: 280px;
     width: 1440.80078125px;
-    /* background: linear-gradient(90deg, #94AFFF 0%, #4E64F9 94.5%);
-    opacity: 0.1; */
+    background: linear-gradient(90deg, #94AFFF 0%, #4E64F9 94.5%);
+    opacity: 0.1;
+    position: absolute;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    /* line-height: 100%; */
+    position: relative;
 }
 
 .ellipse {
@@ -11,4 +23,21 @@
     background-color: #664EF9;
     border-radius: 50%;
     margin-left: 9px;
+}
+
+.mainBlock {
+    height: 1201px;
+    width: 1440px;
+}
+
+.description {
+    height: 576px;
+    width: 844px;
+}
+
+.readMore {
+    height: 737px;
+    width: 1441px;
+    background: linear-gradient(90deg, #94AFFF 0%, #4E64F9 94.5%);
+    opacity: 0.1;
 }

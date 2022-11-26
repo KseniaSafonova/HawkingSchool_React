@@ -7,7 +7,7 @@ const Card = (props) => {
         <div className={styles.card}>
             <img className={styles.image} src={props.image} alt="" />
             <div className={styles.title}>{props.title}</div>
-            <div className={styles.description}>{props.description}</div>
+            <div className={styles.description}>{props.descriptionShort}</div>
             <div className={styles.bottomBlock}>
                 <div className={styles.date}>{props.date}</div>
                 <Link
