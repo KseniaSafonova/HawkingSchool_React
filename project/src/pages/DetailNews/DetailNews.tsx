@@ -15,12 +15,14 @@ const DetailNews = ({ cards }) => {
     const [title, setTitle] = useState('');
     const [image, setImage] = useState('');
     const [description, setDescription] = useState([]);
+    let img = require('../../images' + image)
 
     useEffect(() => {
         const currentCard = cards.filter((card: any) => card.id == id);
         setDate(currentCard[0].date)
         setTitle(currentCard[0].title)
         setImage(currentCard[0].image)
+        console.log(currentCard[0].image)
         setDescription(currentCard[0].description)
     }, [id])
 
@@ -39,18 +41,17 @@ const DetailNews = ({ cards }) => {
                     <div className={styles.date}>{date}</div>
                     <div className={styles.socialNetworks}>
                         Поделиться
-                        <div className={styles.icon}><SlSocialVkontakte /></div>
-                        <div className={styles.icon}><ImFacebook /></div>
-                        <div className={styles.icon}><FaViber /></div>
-                        <div className={styles.icon}><FaTelegramPlane /></div>
-                        <div className={styles.icon}><ImWhatsapp /></div>
+                        <div className={styles.iconBlock}><SlSocialVkontakte className={styles.icon} /></div>
+                        <div className={styles.iconBlock}><ImFacebook className={styles.icon} /></div>
+                        <div className={styles.iconBlock}><FaViber className={styles.icon} /></div>
+                        <div className={styles.iconBlock}><FaTelegramPlane className={styles.icon} /></div>
+                        <div className={styles.iconBlock}><ImWhatsapp className={styles.icon} /></div>
                     </div>
                 </div>
             </div>
             <div className={styles.mainBlock}>
-                {/* <div ><img src={`../../images${image}`} alt="" /></div> */}
+                <div><img src={img} alt="" /></div>
                 <div className={styles.description}>
-
                     {
                         description.map((div: any) => <p>{div}</p>)
                     }
