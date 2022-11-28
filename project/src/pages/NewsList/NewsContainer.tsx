@@ -3,7 +3,7 @@ import styles from '../../styles/NewsList/NewsContainer.module.css';
 import home from '../../images/home.svg';
 import search from '../../images/search.svg';
 import { useState } from "react";
-import { Link } from "react-router-dom";
+
 //@ts-ignore
 const NewsContainer = ({ cards }) => {
 
