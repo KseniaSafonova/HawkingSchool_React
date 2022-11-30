@@ -2,6 +2,7 @@ import Error from './pages/Error/Error';
 import Header from './components/Header';
 import HeaderNav from './components/HeaderNav';
 import Footer from './components/Footer';
+import ReduxTest from './components/ReduxTest';
 import {
   BrowserRouter,
   Routes,
@@ -33,6 +34,7 @@ function App() {
       <div className="App">
         <Header />
         <HeaderNav />
+        <ReduxTest />
         {/* <Error /> */}
         <Routes>
           <Route path='/' element={<Main />}></Route>
