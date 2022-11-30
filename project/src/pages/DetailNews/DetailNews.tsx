@@ -15,7 +15,7 @@ const DetailNews = ({ cards }) => {
     const [title, setTitle] = useState('');
     const [image, setImage] = useState('');
     const [description, setDescription] = useState([]);
-    let img = require('../../images' + image)
+    // let img = require('../../images' + image)
 
     useEffect(() => {
         const currentCard = cards.filter((card: any) => card.id == id);
@@ -50,7 +50,7 @@ const DetailNews = ({ cards }) => {
                 </div>
             </div>
             <div className={styles.mainBlock}>
-                <div><img src={img} alt="" /></div>
+                {/* <div><img src={img} alt="" /></div> */}
                 <div className={styles.description}>
                     {
                         description.map((div: any) => <p>{div}</p>)
