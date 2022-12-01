@@ -1,14 +1,14 @@
 
 import type { RootState } from '../redux/store'
 import { useSelector, useDispatch } from 'react-redux'
-import { decrement, increment } from '../redux/reducers/counterSlice'
+import { decrement, increment } from '../redux/reducers/newsSlice'
 
 const ReduxTest = () => {
     const count = useSelector((state: RootState) => state.counter.value)
     const dispatch = useDispatch()
     return (
         <>
-            <div>
+            {/* <div>
                 <div>
                     <button
                         aria-label="Increment value"
@@ -24,7 +24,7 @@ const ReduxTest = () => {
                         Decrement
                     </button>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

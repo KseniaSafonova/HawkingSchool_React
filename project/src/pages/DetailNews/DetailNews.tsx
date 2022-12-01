@@ -8,6 +8,7 @@ import { FaViber } from 'react-icons/fa';
 import { FaTelegramPlane } from 'react-icons/fa';
 import { ImWhatsapp } from 'react-icons/im';
 
+
 //@ts-ignore
 const DetailNews = ({ cards }) => {
     let { id } = useParams();
@@ -57,7 +58,9 @@ const DetailNews = ({ cards }) => {
                     }
                 </div>
             </div>
-            <div className={styles.readMore}></div>
+            <div className={styles.readMore}>
+
+            </div>
         </>
     )
 }
