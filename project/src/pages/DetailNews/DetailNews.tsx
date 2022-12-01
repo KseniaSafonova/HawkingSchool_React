@@ -16,13 +16,13 @@ const DetailNews = ({ news }) => {
     const [title, setTitle] = useState('');
     const [image, setImage] = useState('');
     const [description, setDescription] = useState([]);
-    let img = require('../../images' + image)
+    console.log('../../images' + image)
 
     useEffect(() => {
-        const currentCard = news.filter((card: any) => card.id == id);
+        const currentCard = news.filter((n: any) => n.id == id);
         setDate(currentCard[0].date)
         setTitle(currentCard[0].title)
-        setImage(currentCard[0].image)
+        setImage(currentCard[0].bigImage)
         setDescription(currentCard[0].description)
     }, [id])
 
@@ -50,7 +50,7 @@ const DetailNews = ({ news }) => {
                 </div>
             </div>
             <div className={styles.mainBlock}>
-                <div><img src={img} className={styles.img} alt="" /></div>
+                <div><img src={require('../../images' + image)} className={styles.img} alt="" /></div>
                 <div className={styles.description}>
                     {
                         description.map((div: any) => <p>{div}</p>)

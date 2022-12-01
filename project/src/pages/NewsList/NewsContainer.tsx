@@ -33,6 +33,7 @@ const NewsContainer = ({ news }) => {
                     news.map((n: any) =>
                         <Card
                             image={require('../../images' + n.image)}
+                            bigImage={n.bigImage}
                             id={n.id}
                             title={n.title}
                             descriptionShort={n.descriptionShort}
