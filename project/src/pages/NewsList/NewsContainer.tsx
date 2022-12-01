@@ -5,7 +5,7 @@ import search from '../../images/search.svg';
 import { useState } from "react";
 
 //@ts-ignore
-const NewsContainer = ({ cards }) => {
+const NewsContainer = ({ news }) => {
 
     const [inputValue, setInputValue] = useState('')
 
@@ -30,13 +30,13 @@ const NewsContainer = ({ cards }) => {
             <div className={styles.background}></div>
             <div className={styles.cardContainer}>
                 {
-                    cards.map((card: any) =>
+                    news.map((n: any) =>
                         <Card
-                            image={require('../../images' + card.image)}
-                            id={card.id}
-                            title={card.title}
-                            descriptionShort={card.descriptionShort}
-                            date={card.date}>
+                            image={require('../../images' + n.image)}
+                            id={n.id}
+                            title={n.title}
+                            descriptionShort={n.descriptionShort}
+                            date={n.date}>
                         </Card>)
                 }
             </div >

@@ -4,7 +4,7 @@ import NewsContainer from "./NewsContainer";
 const NewsList = (props) => {
     return (
         <>
-            <NewsContainer cards={props.cards} />
+            <NewsContainer news={props.news} />
         </>
     )
 }

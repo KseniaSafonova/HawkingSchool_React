@@ -47,19 +47,13 @@ const initialState: NewsState = {
     ]
 }
 
-export const counterSlice = createSlice({
-    name: 'counter',
+export const newsSlice = createSlice({
+    name: 'news',
     initialState,
     reducers: { //ф-и изменяющие store
-        increment: (state) => {
-
-        },
-        decrement: (state) => {
-
-        }
     },
 })
 
-export const { increment, decrement } = counterSlice.actions
+// export const { increment, decrement } = newsSlice.actions
 
-export default counterSlice.reducer
+export default newsSlice.reducer

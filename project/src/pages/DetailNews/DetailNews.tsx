@@ -7,23 +7,22 @@ import { ImFacebook } from 'react-icons/im';
 import { FaViber } from 'react-icons/fa';
 import { FaTelegramPlane } from 'react-icons/fa';
 import { ImWhatsapp } from 'react-icons/im';
-
+// import img from '../../images/image.png'
 
 //@ts-ignore
-const DetailNews = ({ cards }) => {
+const DetailNews = ({ news }) => {
     let { id } = useParams();
     const [date, setDate] = useState('');
     const [title, setTitle] = useState('');
     const [image, setImage] = useState('');
     const [description, setDescription] = useState([]);
-    // let img = require('../../images' + image)
+    let img = require('../../images' + image)
 
     useEffect(() => {
-        const currentCard = cards.filter((card: any) => card.id == id);
+        const currentCard = news.filter((card: any) => card.id == id);
         setDate(currentCard[0].date)
         setTitle(currentCard[0].title)
         setImage(currentCard[0].image)
-        console.log(currentCard[0].image)
         setDescription(currentCard[0].description)
     }, [id])
 
@@ -51,7 +50,7 @@ const DetailNews = ({ cards }) => {
                 </div>
             </div>
             <div className={styles.mainBlock}>
-                {/* <div><img src={img} alt="" /></div> */}
+                <div><img src={img} className={styles.img} alt="" /></div>
                 <div className={styles.description}>
                     {
                         description.map((div: any) => <p>{div}</p>)
