@@ -7,6 +7,7 @@ import { ImFacebook } from 'react-icons/im';
 import { FaViber } from 'react-icons/fa';
 import { FaTelegramPlane } from 'react-icons/fa';
 import { ImWhatsapp } from 'react-icons/im';
+import Card from '../NewsList/Card';
 // import img from '../../images/image.png'
 
 //@ts-ignore
@@ -16,7 +17,6 @@ const DetailNews = ({ news }) => {
     const [title, setTitle] = useState('');
     const [image, setImage] = useState('');
     const [description, setDescription] = useState([]);
-    console.log('../../images' + image)
 
     useEffect(() => {
         const currentCard = news.filter((n: any) => n.id == id);
@@ -50,16 +50,33 @@ const DetailNews = ({ news }) => {
                 </div>
             </div>
             <div className={styles.mainBlock}>
-                <div><img src={require('../../images' + image)} className={styles.img} alt="" /></div>
+                <div>
+                    <img src={require('../../images' + image)} className={styles.img} alt="" />
+                </div>
                 <div className={styles.description}>
                     {
                         description.map((div: any) => <p>{div}</p>)
                     }
                 </div>
             </div>
-            <div className={styles.readMore}>
 
+            <div className={styles.cardContainer}>
+                <div className={styles.background}></div>
+                <div className={styles.readMore}>Читайте также</div>
+                {
+                    news.forEach((n: any, i: any) => {
+                        if (i < 3)
+                            <Card
+                                image={require('../../images' + n.image)}
+                                bigImage={n.bigImage}
+                                id={n.id}
+                                title={n.title}
+                                descriptionShort={n.descriptionShort}
+                                date={n.date} />
+                    })
+                }
             </div>
+
         </>
     )
 }

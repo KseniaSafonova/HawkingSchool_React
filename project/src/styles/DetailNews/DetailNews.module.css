@@ -111,11 +111,28 @@
     margin-left: 298px;
 }
 
-.readMore {
+.cardContainer {
+    height: 737px;
+    width: 1441px;
+    display: flex;
+}
+
+.background {
     height: 737px;
     width: 1441px;
     background: linear-gradient(90deg, #94AFFF 0%, #4E64F9 94.5%);
     opacity: 0.1;
+    position: absolute;
+}
+
+.readMore {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #1E2123;
+    position: absolute;
 }
 
 .img {

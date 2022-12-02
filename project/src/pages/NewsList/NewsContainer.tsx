@@ -37,8 +37,7 @@ const NewsContainer = ({ news }) => {
                             id={n.id}
                             title={n.title}
                             descriptionShort={n.descriptionShort}
-                            date={n.date}>
-                        </Card>)
+                            date={n.date} />)
                 }
             </div >
         </div>
