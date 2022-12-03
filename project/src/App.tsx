@@ -15,7 +15,6 @@ import Contacts from './pages/Contacts/Contacts';
 import type { RootState } from './redux/store';
 import { useSelector } from 'react-redux'
 
-
 //@ts-ignore
 function App() {
   const news = useSelector((state: RootState) => state.news.value)

@@ -8,7 +8,6 @@ import { FaViber } from 'react-icons/fa';
 import { FaTelegramPlane } from 'react-icons/fa';
 import { ImWhatsapp } from 'react-icons/im';
 import Card from '../NewsList/Card';
-// import img from '../../images/image.png'
 
 //@ts-ignore
 const DetailNews = ({ news }) => {
@@ -26,6 +25,8 @@ const DetailNews = ({ news }) => {
         setDescription(currentCard[0].description)
     }, [id])
 
+
+    let cards = news.slice(0, 3);
     return (
         <>
             <div className={styles.titleBlock}></div>
@@ -50,8 +51,11 @@ const DetailNews = ({ news }) => {
                 </div>
             </div>
             <div className={styles.mainBlock}>
-                <div>
-                    <img src={require('../../images' + image)} className={styles.img} alt="" />
+                <div style={{
+                    height: '563px',
+                    width: '844px'
+                }}>
+                    {/* <img src={require('../../images' + image)} className={styles.img} alt="" /> */}
                 </div>
                 <div className={styles.description}>
                     {
@@ -59,24 +63,22 @@ const DetailNews = ({ news }) => {
                     }
                 </div>
             </div>
-
             <div className={styles.cardContainer}>
                 <div className={styles.background}></div>
                 <div className={styles.readMore}>Читайте также</div>
-                {
-                    news.forEach((n: any, i: any) => {
-                        if (i < 3)
+                <div className={styles.cards}>
+                    {
+                        cards.map((card: any) =>
                             <Card
-                                image={require('../../images' + n.image)}
-                                bigImage={n.bigImage}
-                                id={n.id}
-                                title={n.title}
-                                descriptionShort={n.descriptionShort}
-                                date={n.date} />
-                    })
-                }
+                                image={require('../../images' + card.image)}
+                                id={card.id}
+                                title={card.title}
+                                descriptionShort={card.descriptionShort}
+                                date={card.date} />
+                        )
+                    }
+                </div>
             </div>
-
         </>
     )
 }
