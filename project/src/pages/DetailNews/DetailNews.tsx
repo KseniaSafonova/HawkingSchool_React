@@ -7,25 +7,26 @@ import { ImFacebook } from 'react-icons/im';
 import { FaViber } from 'react-icons/fa';
 import { FaTelegramPlane } from 'react-icons/fa';
 import { ImWhatsapp } from 'react-icons/im';
+import Card from '../NewsList/Card';
 
 //@ts-ignore
-const DetailNews = ({ cards }) => {
+const DetailNews = ({ news }) => {
     let { id } = useParams();
     const [date, setDate] = useState('');
     const [title, setTitle] = useState('');
     const [image, setImage] = useState('');
     const [description, setDescription] = useState([]);
-    // let img = require('../../images' + image)
 
     useEffect(() => {
-        const currentCard = cards.filter((card: any) => card.id == id);
+        const currentCard = news.filter((n: any) => n.id == id);
         setDate(currentCard[0].date)
         setTitle(currentCard[0].title)
-        setImage(currentCard[0].image)
-        console.log(currentCard[0].image)
+        setImage(currentCard[0].bigImage)
         setDescription(currentCard[0].description)
     }, [id])
 
+
+    let cards = news.slice(0, 3);
     return (
         <>
             <div className={styles.titleBlock}></div>
@@ -50,14 +51,34 @@ const DetailNews = ({ cards }) => {
                 </div>
             </div>
             <div className={styles.mainBlock}>
-                {/* <div><img src={img} alt="" /></div> */}
+                <div style={{
+                    height: '563px',
+                    width: '844px'
+                }}>
+                    {/* <img src={require('../../images' + image)} className={styles.img} alt="" /> */}
+                </div>
                 <div className={styles.description}>
                     {
                         description.map((div: any) => <p>{div}</p>)
                     }
                 </div>
             </div>
-            <div className={styles.readMore}></div>
+            <div className={styles.cardContainer}>
+                <div className={styles.background}></div>
+                <div className={styles.readMore}>Читайте также</div>
+                <div className={styles.cards}>
+                    {
+                        cards.map((card: any) =>
+                            <Card
+                                image={require('../../images' + card.image)}
+                                id={card.id}
+                                title={card.title}
+                                descriptionShort={card.descriptionShort}
+                                date={card.date} />
+                        )
+                    }
+                </div>
+            </div>
         </>
     )
 }

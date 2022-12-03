@@ -111,9 +111,45 @@
     margin-left: 298px;
 }
 
-.readMore {
+.cardContainer {
+    height: 737px;
+    width: 1441px;
+    display: flex;
+}
+
+.background {
     height: 737px;
     width: 1441px;
     background: linear-gradient(90deg, #94AFFF 0%, #4E64F9 94.5%);
     opacity: 0.1;
+    position: absolute;
+}
+
+.readMore {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #1E2123;
+    position: absolute;
+    margin-top: 62px;
+    margin-left: 81px;
+}
+
+.cards {
+    position: absolute;
+    margin-top: 136px;
+    margin-left: 81px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+
+.img {
+    height: 563;
+    width: 844px;
+    border-radius: 10px;
+    margin-left: 297.5px;
+    margin-top: -120px;
 }
