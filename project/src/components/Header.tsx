@@ -26,7 +26,8 @@ const Header = () => {
             <div className={styles.rightBlock}>
                 <a href="" className={styles.link}>Закладки</a>
                 <BiHeart className={styles.heart} />
-                <a href="" className={styles.login}>Вход и регистрация</a></div>
+                <Link to='/Registration' className={styles.login}>Вход и регистрация</Link>
+            </div>
         </div>
     )
 }
