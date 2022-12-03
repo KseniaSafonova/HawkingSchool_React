@@ -12,7 +12,7 @@ import Main from './pages/Main/Main';
 import DetailNews from './pages/DetailNews/DetailNews';
 import NewsList from './pages/NewsList/NewsList';
 import Contacts from './pages/Contacts/Contacts';
-import Registration from './components/Registration';
+import Registration from './components/LogIn';
 import type { RootState } from './redux/store';
 import { useSelector } from 'react-redux'
 
