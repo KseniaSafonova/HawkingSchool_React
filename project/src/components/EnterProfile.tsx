@@ -31,14 +31,14 @@ const EnterProfile: React.FC = () => {
                         <div className={styles.contentRegistration}>
                             <div className={styles.leftBlock}>
                                 <div className={styles.title}>Регистрация</div>
-                                <div className={styles.input}>
+                                <form onSubmit={handleSubmit(onSubmit)} className={styles.inputs}>
                                     <input type="text" placeholder='Логин' className={styles.loginInput} />
                                     <input type="text" placeholder='Электроннная почта' className={styles.emailInput} />
                                     <input type="text" placeholder='Пароль' className={styles.passwordInput} />
                                     <input type="text" placeholder='Повторите пароль' className={styles.passwordInput} />
-                                </div>
-                                <div className={styles.captcha}></div>
-                                <div><button className={styles.button}>Зарегистрироваться</button></div>
+                                    <div className={styles.captcha}></div>
+                                    <div><input type="submit" className={styles.button} value={'Зарегистрироваться'} /></div>
+                                </form>
                             </div>
                             <div className={styles.rightBlock}>
                                 <div className={styles.userMust}>
@@ -68,13 +68,11 @@ const EnterProfile: React.FC = () => {
                             <div className={styles.description}>Авторизируйтесь, чтобы начать
                                 публиковать свои объявления</div>
 
-                            <form onSubmit={handleSubmit(onSubmit)} className={styles.input}>
+                            <form onSubmit={handleSubmit(onSubmit)} className={styles.inputs}>
                                 <input type="text" placeholder='Логин' className={styles.loginInput} {...register("login", { required: true })} />
                                 {errors.login && <span>Ошибка ввода</span>}
                                 <input type="text" placeholder='Пароль' className={styles.passwordInput} {...register("password", { required: true })} />
                                 {errors.password && <span>Ошибка ввода</span>}
-
-
                                 <div className={styles.password}>
                                     <label className={styles.switch}>
                                         <input type="checkbox" className={styles.checkbox} />
@@ -84,7 +82,6 @@ const EnterProfile: React.FC = () => {
                                     <a href="">Забыли пароль?</a>
                                 </div>
                                 <div><input type="submit" value={'Войти'} className={styles.button} /></div>
-                                {/* <div><button className={styles.button}>Войти</button></div> */}
                             </form>
                             <div className={styles.createAccount}>
                                 <span>Еще нет аккаунта?</span>
