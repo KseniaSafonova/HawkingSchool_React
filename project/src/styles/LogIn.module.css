@@ -97,6 +97,11 @@ input:focus {
     justify-content: center;
     margin-left: 50px;
     margin-top: 38px;
+    text-indent: 0;
+}
+
+.button:focus {
+    background-color: #FFD54F;
 }
 
 .password {

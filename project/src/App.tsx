@@ -12,9 +12,11 @@ import Main from './pages/Main/Main';
 import DetailNews from './pages/DetailNews/DetailNews';
 import NewsList from './pages/NewsList/NewsList';
 import Contacts from './pages/Contacts/Contacts';
-import Registration from './components/LogIn';
+import Registration from './components/EnterProfile';
 import type { RootState } from './redux/store';
 import { useSelector } from 'react-redux'
+import Validation from './components/Validation';
+import EnterProfile from './components/EnterProfile';
 
 //@ts-ignore
 function App() {
@@ -26,7 +28,7 @@ function App() {
         <HeaderNav />
         {/* <Error /> */}
         <Routes>
-          <Route path='/Registration' element={<Registration />}></Route>
+          <Route path='/Registration' element={<EnterProfile />}></Route>
           <Route path='/' element={<Main />}></Route>
           <Route path='/newsList' element={<NewsList news={news} />}></Route>
           <Route path='/newsList/:id' element={<DetailNews news={news} />}></Route>
