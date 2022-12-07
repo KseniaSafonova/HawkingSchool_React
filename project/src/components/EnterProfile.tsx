@@ -36,7 +36,7 @@ const EnterProfile: React.FC = () => {
                                     <input type="text" placeholder='Электроннная почта' className={styles.emailInput} />
                                     <input type="text" placeholder='Пароль' className={styles.passwordInput} />
                                     <input type="text" placeholder='Повторите пароль' className={styles.passwordInput} />
-                                    <div className={styles.captcha}></div>
+                                    {/* <div className={styles.captcha}></div> */}
                                     <div><input type="submit" className={styles.button} value={'Зарегистрироваться'} /></div>
                                 </form>
                             </div>
