@@ -10,6 +10,7 @@ interface EnterProfile {
 type Inputs = {
     login: string,
     password: string,
+    email: string
 };
 
 const EnterProfile: React.FC = () => {
@@ -32,11 +33,40 @@ const EnterProfile: React.FC = () => {
                             <div className={styles.leftBlock}>
                                 <div className={styles.title}>Регистрация</div>
                                 <form onSubmit={handleSubmit(onSubmit)} className={styles.inputs}>
-                                    <input type="text" placeholder='Логин' className={styles.loginInput} />
-                                    <input type="text" placeholder='Электроннная почта' className={styles.emailInput} />
-                                    <input type="text" placeholder='Пароль' className={styles.passwordInput} />
-                                    <input type="text" placeholder='Повторите пароль' className={styles.passwordInput} />
-                                    {/* <div className={styles.captcha}></div> */}
+                                    <input type="text"
+                                        placeholder='Логин'
+                                        className={styles.loginInput}
+                                        {...register("login", { required: true })} />
+
+                                    <input type="text"
+                                        placeholder='Электроннная почта'
+                                        className={styles.emailInput}
+                                        {...register("email", { required: true })} />
+
+                                    <input type="text"
+                                        placeholder='Пароль'
+                                        className={styles.passwordInput}
+                                        {...register("password", {
+                                            required: {
+                                                value: true,
+                                                message: 'Ошибка ввода'
+                                            },
+                                            minLength: 10
+                                        })} />
+
+                                    <input type="text"
+                                        placeholder='Повторите пароль'
+                                        className={styles.passwordInput}
+                                        {...register("password", {
+                                            required: {
+                                                value: true,
+                                                message: 'Ошибка ввода'
+                                            },
+                                            minLength: 10
+                                        })} />
+
+                                    <div className={styles.captcha}></div>
+                                    {errors.password && <div>{errors.password.message}</div>}
                                     <div><input type="submit" className={styles.button} value={'Зарегистрироваться'} /></div>
                                 </form>
                             </div>
@@ -70,9 +100,9 @@ const EnterProfile: React.FC = () => {
 
                             <form onSubmit={handleSubmit(onSubmit)} className={styles.inputs}>
                                 <input type="text" placeholder='Логин' className={styles.loginInput} {...register("login", { required: true })} />
-                                {errors.login && <span>Ошибка ввода</span>}
+
                                 <input type="text" placeholder='Пароль' className={styles.passwordInput} {...register("password", { required: true })} />
-                                {errors.password && <span>Ошибка ввода</span>}
+
                                 <div className={styles.password}>
                                     <label className={styles.switch}>
                                         <input type="checkbox" className={styles.checkbox} />
@@ -81,6 +111,7 @@ const EnterProfile: React.FC = () => {
                                     <span className={styles.rememberMe}>Запомнить меня</span>
                                     <a href="">Забыли пароль?</a>
                                 </div>
+                                {errors.password && <span>Ошибка ввода</span>}
                                 <div><input type="submit" value={'Войти'} className={styles.button} /></div>
                             </form>
                             <div className={styles.createAccount}>
