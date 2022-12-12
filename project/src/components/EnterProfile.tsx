@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from '../styles/LogIn.module.css';
 import point from '../images/login/point.svg';
 import { useForm, SubmitHandler } from "react-hook-form";
+import alert from '../images/login/alert.svg'
 
 interface EnterProfile {
     // OpenRegistration: () => void;
@@ -22,6 +23,7 @@ const EnterProfile: React.FC = () => {
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
+
     return (
         <>
             {
@@ -33,40 +35,76 @@ const EnterProfile: React.FC = () => {
                             <div className={styles.leftBlock}>
                                 <div className={styles.title}>Регистрация</div>
                                 <form onSubmit={handleSubmit(onSubmit)} className={styles.inputs}>
-                                    <input type="text"
+                                    <input
                                         placeholder='Логин'
                                         className={styles.loginInput}
                                         {...register("login", { required: true })} />
 
-                                    <input type="text"
+                                    <input
                                         placeholder='Электроннная почта'
                                         className={styles.emailInput}
-                                        {...register("email", { required: true })} />
+                                        {...register("email", {
+                                            required: 'Ошибка ввода',
+                                            pattern: {
+                                                value: /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/,
+                                                message: 'Ошибка ввода'
+                                            }
+                                        })} />
 
-                                    <input type="text"
+                                    <input
                                         placeholder='Пароль'
                                         className={styles.passwordInput}
                                         {...register("password", {
-                                            required: {
-                                                value: true,
+                                            required: 'Ошибка ввода',
+                                            pattern: {
+                                                value: /(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g,
                                                 message: 'Ошибка ввода'
-                                            },
-                                            minLength: 10
+                                            }
                                         })} />
 
-                                    <input type="text"
+                                    <input
                                         placeholder='Повторите пароль'
                                         className={styles.passwordInput}
                                         {...register("password", {
-                                            required: {
-                                                value: true,
+                                            required: 'Ошибка ввода',
+                                            pattern: {
+                                                value: /(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g,
                                                 message: 'Ошибка ввода'
-                                            },
-                                            minLength: 10
+                                            }
                                         })} />
 
                                     <div className={styles.captcha}></div>
-                                    {errors.password && <div>{errors.password.message}</div>}
+                                    {errors.email ? (
+                                        <>
+                                            {errors.email.type === "required" && (
+                                                <div className={styles.errorMessage}>
+                                                    {errors.email.message}
+                                                    <img src={alert} alt="" />
+                                                </div>
+                                            )}
+                                            {errors.email.type === "pattern" && (
+                                                <div className={styles.errorMessage}>
+                                                    {errors.email.message}
+                                                    <img src={alert} alt="" />
+                                                </div>
+                                            )}
+                                        </>
+                                    ) : errors.password ? (
+                                        <>
+                                            {errors.password.type === "required" && (
+                                                <div className={styles.errorMessage}>
+                                                    {errors.password.message}
+                                                    <img src={alert} alt="" />
+                                                </div>
+                                            )}
+                                            {errors.password.type === "pattern" && (
+                                                <div className={styles.errorMessage}>
+                                                    {errors.password.message}
+                                                    <img src={alert} alt="" />
+                                                </div>
+                                            )}
+                                        </>
+                                    ) : null}
                                     <div><input type="submit" className={styles.button} value={'Зарегистрироваться'} /></div>
                                 </form>
                             </div>
@@ -99,9 +137,24 @@ const EnterProfile: React.FC = () => {
                                 публиковать свои объявления</div>
 
                             <form onSubmit={handleSubmit(onSubmit)} className={styles.inputs}>
-                                <input type="text" placeholder='Логин' className={styles.loginInput} {...register("login", { required: true })} />
+                                <input type="text"
+                                    placeholder='Логин'
+                                    className={styles.loginInput}
+                                    {...register("login", {
+                                        required: 'Ошибка ввода'
+                                    })} />
 
-                                <input type="text" placeholder='Пароль' className={styles.passwordInput} {...register("password", { required: true })} />
+                                <input type="text"
+                                    placeholder='Пароль'
+                                    className={styles.passwordInput}
+                                    {...register("password", {
+                                        required: 'Ошибка ввода',
+                                        pattern: {
+                                            value: /(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g,
+                                            message: 'Ошибка ввода'
+                                        }
+                                    })} />
+
 
                                 <div className={styles.password}>
                                     <label className={styles.switch}>
@@ -111,7 +164,31 @@ const EnterProfile: React.FC = () => {
                                     <span className={styles.rememberMe}>Запомнить меня</span>
                                     <a href="">Забыли пароль?</a>
                                 </div>
-                                {errors.password && <span>Ошибка ввода</span>}
+                                {errors.login ? (
+                                    <>
+                                        {errors.login.type === "required" && (
+                                            <div className={styles.errorMessage}>
+                                                {errors.login.message}
+                                                <img src={alert} alt="" />
+                                            </div>
+                                        )}
+                                    </>
+                                ) : errors.password ? (
+                                    <>
+                                        {errors.password.type === "required" && (
+                                            <div className={styles.errorMessage}>
+                                                {errors.password.message}
+                                                <img src={alert} alt="" />
+                                            </div>
+                                        )}
+                                        {errors.password.type === "pattern" && (
+                                            <div className={styles.errorMessage}>
+                                                {errors.password.message}
+                                                <img src={alert} alt="" />
+                                            </div>
+                                        )}
+                                    </>
+                                ) : null}
                                 <div><input type="submit" value={'Войти'} className={styles.button} /></div>
                             </form>
                             <div className={styles.createAccount}>

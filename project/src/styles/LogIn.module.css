@@ -88,7 +88,8 @@ input:focus {
     font-size: 16px;
     line-height: 24px;
     margin-left: 0px;
-    margin-top: 38px;
+    /* margin-top: 38px; */
+    margin-top: 20px;
     text-indent: 0;
 }
 
@@ -182,7 +183,8 @@ input:focus {
 }
 
 .createAccount {
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    margin-top: 30px;
     margin-left: 75px;
 }
 
@@ -307,8 +309,6 @@ input:focus {
     background-position-y: 15px;
     padding: 15px 20px 15px 20px;
     box-sizing: border-box;
-
-
     margin-top: 20px;
     outline: 0;
     text-indent: 52.5px;
@@ -317,4 +317,28 @@ input:focus {
 .passwordInput:focus {
     border: 2px solid rgba(78, 100, 249, 0.8);
     background-image: url('../images/login/passwordFocus.svg');
+}
+
+/* .errorStyle {
+    border: 1px solid #EB5757;
+} */
+
+.errorMessage {
+    height: 48px;
+    width: 306px;
+    border-radius: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EB5757;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFF;
+}
+
+.errorMessage img {
+    margin-left: 15px;
 }
