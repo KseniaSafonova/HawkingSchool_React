@@ -63,18 +63,6 @@
     margin-left: 50px;
 }
 
-input {
-    height: 50px;
-    width: 306px;
-    border-radius: 30px;
-    background: #F7F7F7;
-    border: 2px solid #F7F7F7;
-}
-
-input:focus {
-    background-color: #FFFF;
-}
-
 .button {
     height: 48px;
     width: 306px;
@@ -278,11 +266,17 @@ input:focus {
     margin-top: 20px;
     outline: 0;
     text-indent: 52.5px;
+    height: 50px;
+    width: 306px;
+    border-radius: 30px;
+    background-color: #F7F7F7;
+    border: 2px solid #F7F7F7;
 }
 
 .loginInput:focus {
     border: 2px solid rgba(78, 100, 249, 0.8);
     background-image: url('../images/login/userFocus.svg');
+    background-color: #FFFF;
 }
 
 .emailInput {
@@ -295,11 +289,17 @@ input:focus {
     margin-top: 20px;
     outline: 0;
     text-indent: 52.5px;
+    height: 50px;
+    width: 306px;
+    border-radius: 30px;
+    background-color: #F7F7F7;
+    border: 2px solid #F7F7F7;
 }
 
 .emailInput:focus {
     border: 2px solid rgba(78, 100, 249, 0.8);
     background-image: url('../images/login/mailFocus.svg');
+    background-color: #FFFF;
 }
 
 .passwordInput {
@@ -312,11 +312,17 @@ input:focus {
     margin-top: 20px;
     outline: 0;
     text-indent: 52.5px;
+    height: 50px;
+    width: 306px;
+    border-radius: 30px;
+    background-color: #F7F7F7;
+    border: 2px solid #F7F7F7;
 }
 
 .passwordInput:focus {
     border: 2px solid rgba(78, 100, 249, 0.8);
     background-image: url('../images/login/passwordFocus.svg');
+    background-color: #FFFF;
 }
 
 /* .errorStyle {
@@ -342,3 +348,16 @@ input:focus {
 .errorMessage img {
     margin-left: 15px;
 }
+
+/* 
+input {
+    height: 50px;
+    width: 306px;
+    border-radius: 30px;
+    background: #F7F7F7;
+    border: 2px solid #F7F7F7;
+}
+
+input:focus {
+    background-color: #FFFF;
+} */
