@@ -21,6 +21,7 @@ import EnterProfile from './components/EnterProfile';
 //@ts-ignore
 function App() {
   const news = useSelector((state: RootState) => state.news.value)
+  const cities = useSelector((state: RootState) => state.cities.value)
   return (
     <BrowserRouter>
       <div className="App">
@@ -29,7 +30,7 @@ function App() {
         {/* <Error /> */}
         <Routes>
           <Route path='/Registration' element={<EnterProfile />}></Route>
-          <Route path='/' element={<Main />}></Route>
+          <Route path='/' element={<Main cities={cities} />}></Route>
           <Route path='/newsList' element={<NewsList news={news} />}></Route>
           <Route path='/newsList/:id' element={<DetailNews news={news} />}></Route>
           <Route path='/contacts' element={<Contacts />}></Route>
