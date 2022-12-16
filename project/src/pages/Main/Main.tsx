@@ -1,7 +1,8 @@
 import styles from '../../styles/Main/Main.module.css';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { IoOptionsOutline } from 'react-icons/io5';
-import arrow from '../../images/arrow.svg'
+import arrow from '../../images/arrow.svg';
+import buttonArrow from '../../images/buttonArrow.svg'
 import { useState } from 'react';
 
 
@@ -27,7 +28,7 @@ const Main = ({ cities }) => {
                 </div>
                 <nav className={styles.nav}>
                     <div className={styles.selectCity}>
-                        <div>Город</div>
+                        <div className={styles.inputTitle}>Город</div>
                         <button className={styles.selectButton}>Выберите<img src={arrow} alt="" onClick={showCitiesBlock} /></button>
                         {
                             citiesList &&
@@ -39,21 +40,21 @@ const Main = ({ cities }) => {
                         }
                     </div>
                     <div className={styles.selectRooms}>
-                        <div>Комнаты</div>
+                        <div className={styles.inputTitle}>Комнаты</div>
                         <button className={styles.selectButton}>Выберите<img src={arrow} alt="" /></button>
                     </div>
                     <div className={styles.selectPrices}>
-                        <div>Цена за сутки (BYN)</div>
+                        <div className={styles.inputTitle}>Цена за сутки (BYN)</div>
                         <input type="text" placeholder='От' className={styles.priceInput} /> - <input type="text" placeholder='До' className={styles.priceInput} />
                     </div>
-                    <div>Больше опций
+                    <div className={styles.selectOptions}>
+                        Больше опций
                         <IoOptionsOutline className={styles.options} size='1.5em' />
                     </div>
-                    <div>На карте
+                    <div className={styles.showMap}>
+                        На карте
                         <FaMapMarkerAlt className={styles.point} />
-                    </div>
-                    <div>
-                        <button>Показать</button>
+                        <button>Показать <img src={buttonArrow} alt="" /></button>
                     </div>
                 </nav>
 
