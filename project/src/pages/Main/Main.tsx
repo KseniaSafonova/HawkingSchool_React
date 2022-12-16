@@ -10,10 +10,16 @@ import { useState } from 'react';
 const Main = ({ cities }) => {
 
     const [citiesList, showCitiesList] = useState(false);
+    const [autoNav, setAutoNav] = useState(false);
 
     const showCitiesBlock = () => {
         showCitiesList(!citiesList)
     }
+
+    const showAutoNav = () => {
+        setAutoNav(!autoNav)
+    }
+
     return (
         <>
             <div className={styles.topConainer}>
@@ -24,7 +30,7 @@ const Main = ({ cities }) => {
                     <button className={styles.button}>Квартиры на сутки</button>
                     <button className={styles.button}>Коттеджи и усадьбы</button>
                     <button className={styles.button}>Бани и сауны</button>
-                    <button className={styles.button}>Авто напрокат</button>
+                    <button className={styles.button} onClick={showAutoNav}>Авто напрокат</button>
                 </div>
                 <nav className={styles.nav}>
                     <div className={styles.selectCity}>
@@ -39,10 +45,20 @@ const Main = ({ cities }) => {
                             </ul>
                         }
                     </div>
-                    <div className={styles.selectRooms}>
-                        <div className={styles.inputTitle}>Комнаты</div>
-                        <button className={styles.selectButton}>Выберите<img src={arrow} alt="" /></button>
-                    </div>
+                    {
+                        autoNav ?
+                            <div className={styles.selectRooms}>
+                                <div className={styles.inputTitle}>Вместимость</div>
+                                <button className={styles.selectButton}>Выберите<img src={arrow} alt="" /></button>
+                            </div>
+                            :
+                            <div className={styles.selectRooms}>
+                                <div className={styles.inputTitle}>Комнаты</div>
+                                <button className={styles.selectButton}>Выберите<img src={arrow} alt="" /></button>
+                            </div>
+                    }
+
+
                     <div className={styles.selectPrices}>
                         <div className={styles.inputTitle}>Цена за сутки (BYN)</div>
                         <input type="text" placeholder='От' className={styles.priceInput} /> - <input type="text" placeholder='До' className={styles.priceInput} />
