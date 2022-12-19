@@ -10,14 +10,21 @@ import { useState } from 'react';
 const Main = ({ cities }) => {
 
     const [citiesList, showCitiesList] = useState(false);
-    const [autoNav, setAutoNav] = useState(false);
+    const [apartmentMenu, setApartmentMenu] = useState(true);
+    const [autoMenu, setAutoMenu] = useState(false);
 
     const showCitiesBlock = () => {
         showCitiesList(!citiesList)
     }
 
-    const showAutoNav = () => {
-        setAutoNav(!autoNav)
+    const openApartmentMenu = () => {
+        setApartmentMenu(true)
+        setAutoMenu(false)
+    }
+
+    const openAutoMenu = () => {
+        setAutoMenu(true)
+        setApartmentMenu(false)
     }
 
     return (
@@ -25,12 +32,18 @@ const Main = ({ cities }) => {
             <div className={styles.topConainer}>
                 <div className={styles.backgroundImg}></div>
                 <div className={styles.topImg}></div>
-                <div className={styles.title}>Sdaem.by - у нас живут <span>ваши объявления</span></div>
+                <div className={styles.pageTitle}>Sdaem.by - у нас живут <span>ваши объявления</span></div>
                 <div className={styles.buttons}>
-                    <button className={styles.button}>Квартиры на сутки</button>
-                    <button className={styles.button}>Коттеджи и усадьбы</button>
-                    <button className={styles.button}>Бани и сауны</button>
-                    <button className={styles.button} onClick={showAutoNav}>Авто напрокат</button>
+
+                    {
+                        apartmentMenu ?
+                            <button className={styles.buttonDefaultFocus}>Квартиры на сутки</button>
+                            :
+                            <button className={styles.button} onClick={openApartmentMenu}>Квартиры на сутки</button>
+                    }
+                    <button className={styles.button} onClick={() => { setApartmentMenu(false); setAutoMenu(false) }}>Коттеджи и усадьбы</button>
+                    <button className={styles.button} onClick={() => { setApartmentMenu(false); setAutoMenu(false) }}>Бани и сауны</button>
+                    <button className={styles.button} onClick={openAutoMenu}>Авто напрокат</button>
                 </div>
                 <nav className={styles.nav}>
                     <div className={styles.selectCity}>
@@ -46,7 +59,7 @@ const Main = ({ cities }) => {
                         }
                     </div>
                     {
-                        autoNav ?
+                        autoMenu ?
                             <div className={styles.selectRooms}>
                                 <div className={styles.inputTitle}>Вместимость</div>
                                 <button className={styles.selectButton}>Выберите<img src={arrow} alt="" /></button>
@@ -57,7 +70,6 @@ const Main = ({ cities }) => {
                                 <button className={styles.selectButton}>Выберите<img src={arrow} alt="" /></button>
                             </div>
                     }
-
 
                     <div className={styles.selectPrices}>
                         <div className={styles.inputTitle}>Цена за сутки (BYN)</div>
@@ -73,9 +85,55 @@ const Main = ({ cities }) => {
                         <button>Показать <img src={buttonArrow} alt="" /></button>
                     </div>
                 </nav>
-
             </div>
-
+            <section className={styles.catalog}>
+                <div className={styles.leftBlock}>
+                    <div className={styles.apartmentsForDay}>
+                        <div className={styles.cardDescription}>СНЯТЬ КВАРТИРУ</div>
+                        <div className={styles.cardTitle}>Квартиры на сутки</div>
+                        <div className={styles.cardCities}>
+                            {
+                                cities.map((city: any) => <button className={styles.cardCity}>{city.city}</button>)
+                            }
+                        </div>
+                    </div>
+                    <div className={styles.cottages}>
+                        <div className={styles.cardDescription}>СНЯТЬ КОТТЕДЖ НА ПРАЗДНИК</div>
+                        <div className={styles.cardTitle}>Коттеджи и усадьбы</div>
+                    </div>
+                    <div className={styles.baths}>
+                        <div className={styles.cardDescription}>ПОПАРИТЬСЯ В БАНЕ С ДРУЗЬЯМИ</div>
+                        <div className={styles.cardTitle}>Бани и сауны</div>
+                    </div>
+                    <div className={styles.carRental}>
+                        <div className={styles.cardDescription}>ЕСЛИ СРОЧНО НУЖНА МАШИНА</div>
+                        <div className={styles.cardTitle}>Авто на прокат</div>
+                    </div>
+                </div>
+                <div className={styles.rightBlock}>
+                    <ul>Квартиры
+                        <li>Квартиры в Минске</li>
+                        <li>Квартиры в Гомеле</li>
+                        <li>Квартиры в Гродно</li>
+                        <li>Квартиры в Могилеве</li>
+                        <li>Квартиры в Бресте</li>
+                        <li>Квартиры в Витебск</li>
+                    </ul>
+                    <ul>Коттеджи и усадьбы
+                        <li>Агроусадьбы</li>
+                        <li>Коттеджи</li>
+                        <li>Загородный комплекс</li>
+                        <li>Базы отдыха</li>
+                        <li>Ещё</li>
+                    </ul>
+                    <ul>Популярные направления
+                        <li>Коттеджи и усадьбы на о. Брасласких </li>
+                        <li>Коттеджи и усадьбы (жилье) на Нарочи</li>
+                        <li>Коттеджи и усадьбы (жилье) у воды,
+                            на берегу, на озере</li>
+                    </ul>
+                </div>
+            </section>
         </>
     )
 }

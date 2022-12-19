@@ -23,7 +23,7 @@
     border-radius: 0px 0px 40px 40px;
 }
 
-.title {
+.pageTitle {
     position: absolute;
     margin-top: 82.5px;
     font-family: 'Inter';
@@ -35,7 +35,7 @@
     text-shadow: 0px 2px 5px rgba(0, 14, 142, 0.3);
 }
 
-.title span {
+.pageTitle span {
     color: #FFD54F;
 }
 
@@ -64,6 +64,21 @@
     background-color: #FFFFFF;
     color: #664EF9;
     border-radius: 10px 10px 0px 0px;
+}
+
+.buttonDefaultFocus {
+    background-color: #FFFFFF;
+    color: #664EF9;
+    border-radius: 10px 10px 0px 0px;
+    border: none;
+    height: 54px;
+    width: 187px;
+    padding: 13px 20px 13px 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 .nav {
@@ -150,6 +165,7 @@
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(135, 124, 202, 0.3);
     position: absolute;
+    z-index: 1;
 }
 
 .citiesList li {
@@ -157,6 +173,7 @@
     height: 37px;
     padding: 10px 15px 10px 15px;
     box-sizing: border-box;
+
 }
 
 .selectOptions {
@@ -212,4 +229,104 @@
 .point {
     color: #664EF9;
     margin-left: 5px;
+}
+
+.catalog {
+    height: 568px;
+    margin-top: 84px;
+    display: flex;
+}
+
+.leftBlock {
+    width: 953px;
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 28px;
+    column-gap: 30px;
+}
+
+.apartmentsForDay {
+    background-image: url('../../images/Main/apartmentsForDay.jpg');
+    height: 270px;
+    width: 516px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 20px 40px rgba(135, 124, 202, 0.15));
+}
+
+.cottages {
+    background-image: url('../../images/Main/cotteges.jpg');
+    height: 270px;
+    width: 407px;
+    border-radius: 10px;
+}
+
+.baths {
+    background-image: url('../../images/Main/baths.jpg');
+    height: 270px;
+    width: 407px;
+    border-radius: 10px;
+}
+
+.carRental {
+    background-image: url('../../images/Main/carRental.jpg');
+    height: 270px;
+    width: 516px;
+    border-radius: 10px;
+    margin-left: -110px;
+}
+
+.cardTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-left: 37px;
+    margin-top: 21px;
+}
+
+.cardDescription {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #9D94FF 0%, #6B50E9 94.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-left: 37px;
+    margin-top: 38px;
+}
+
+.cardCities {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 14px;
+    column-gap: 16px;
+    width: 365px;
+    margin-left: 37px;
+    margin-top: 21px;
+}
+
+.cardCity {
+    height: 33px;
+    width: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #664EF9;
+    border: 2px solid #664EF9;
+    border-radius: 16px;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.7);
 }
