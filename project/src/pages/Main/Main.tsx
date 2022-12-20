@@ -4,6 +4,7 @@ import { IoOptionsOutline } from 'react-icons/io5';
 import arrow from '../../images/arrow.svg';
 import buttonArrow from '../../images/buttonArrow.svg'
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 
 
 //@ts-ignore
@@ -93,7 +94,7 @@ const Main = ({ cities }) => {
                         <div className={styles.cardTitle}>Квартиры на сутки</div>
                         <div className={styles.cardCities}>
                             {
-                                cities.map((city: any) => <button className={styles.cardCity}>{city.city}</button>)
+                                cities.map((city: any) => <Link to='/apartments' className={styles.cardCity}>{city.city}</Link>)
                             }
                         </div>
                     </div>

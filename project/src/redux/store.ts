@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
 import newsReducer from './reducers/newsSlice';
 import citiesReducer from './reducers/citiesSlice';
+import apartmentsReducer from './reducers/apartmentsSlice';
 
 export const store = configureStore({
     reducer: {
         news: newsReducer,
-        cities: citiesReducer
+        cities: citiesReducer,
+        apartments: apartmentsReducer
     },
 })
 
