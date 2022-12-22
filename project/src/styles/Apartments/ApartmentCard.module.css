@@ -1,0 +1,97 @@
+.card {
+    height: 535px;
+    width: 406px;
+    border-radius: 10px;
+    /* box-shadow: 20px 20px rgba(39, 95, 158, 0.08); */
+}
+
+.image {
+    height: 226.46092224121094px;
+    width: 406px;
+    border-radius: 10px;
+}
+
+.topBlock {
+    display: flex;
+    margin-top: 20px;
+}
+
+.price {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #664EF9;
+    margin-left: 20px;
+}
+
+.price div {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #BDBDBD;
+}
+
+.persons {
+    height: 34.10493469238281px;
+    width: 87px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F8F8F8;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #686868;
+    margin-left: 87px;
+}
+
+.rooms {
+    height: 34.10493469238281px;
+    width: 68px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F8F8F8;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #686868;
+    margin-left: 20px;
+}
+
+.point,
+.ellips {
+    color: #BDBDBD;
+}
+
+.address {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 24px;
+}
+
+.address span {
+    margin-left: 11.5px;
+}
+
+.subway {
+    margin-top: 11px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
