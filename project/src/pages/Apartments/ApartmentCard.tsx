@@ -1,6 +1,8 @@
 import styles from '../../styles/Apartments/ApartmentCard.module.css';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { IoEllipse } from 'react-icons/io5';
+import { BiHeart } from 'react-icons/bi';
+import { MdPhoneIphone } from 'react-icons/md';
 import subway from '../../images/apartments/subway.svg';
 
 //@ts-ignore
@@ -21,16 +23,21 @@ const ApartmentCard = (props) => {
             </div>
             <div className={styles.subway}>
                 <img src={subway} alt="" />
-                {props.subway}
+                <span>{props.subway}</span>
                 <IoEllipse size='0.5em' className={styles.ellips} />
-                {props.location}
+                <span>{props.location}</span>
             </div>
             <div className={styles.description}>{props.description}</div>
             <div className={styles.bottomBlock}>
-                like контакты подробнее
+                <button className={styles.likeBlock}>
+                    <BiHeart className={styles.like} />
+                </button>
+                <button className={styles.contactsBlock}>
+                    <MdPhoneIphone className={styles.phone} />
+                    <span>Контакты</span>
+                </button>
+                <button className={styles.moreBlock}>Подробнее</button>
             </div>
-
-
         </div >
     )
 }

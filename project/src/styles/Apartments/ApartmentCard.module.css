@@ -2,7 +2,6 @@
     height: 535px;
     width: 406px;
     border-radius: 10px;
-    /* box-shadow: 20px 20px rgba(39, 95, 158, 0.08); */
 }
 
 .image {
@@ -74,6 +73,10 @@
     color: #BDBDBD;
 }
 
+.ellips {
+    margin-left: 30px;
+}
+
 .address {
     font-family: 'Inter';
     font-style: normal;
@@ -81,6 +84,7 @@
     font-size: 16px;
     line-height: 19px;
     margin-top: 24px;
+    margin-left: 20px;
 }
 
 .address span {
@@ -94,4 +98,90 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    margin-left: 20px;
+}
+
+.subway span {
+    margin-left: 6px;
+}
+
+.description {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #8291A3;
+}
+
+.bottomBlock {
+    border-top: 1px solid rgba(78, 100, 249, 0.1);
+    width: 367.25px;
+    margin-left: 20px;
+    margin-top: 13px;
+    display: flex;
+    padding-top: 13px;
+    box-sizing: border-box;
+}
+
+.likeBlock {
+    width: 35px;
+    height: 35px;
+    background: rgba(235, 87, 87, 0.1);
+    border: none;
+    border-radius: 22px;
+    transform: rotate(0.25deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.like {
+    color: #EB5757;
+}
+
+.contactsBlock {
+    color: #664EF9;
+    height: 37px;
+    width: 124px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #F8F8F8;
+    background: #F8F8F8;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 50.5px;
+}
+
+.contactsBlock span {
+    margin-left: 13px;
+}
+
+.phone {
+    color: #664EF9;
+}
+
+.moreBlock {
+    height: 41px;
+    width: 114px;
+    background: rgba(255, 213, 79, 0.1);
+    border: none;
+    border-radius: 17px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FEC100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50.5px;
 }
