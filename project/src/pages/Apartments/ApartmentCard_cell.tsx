@@ -1,4 +1,4 @@
-import styles from '../../styles/Apartments/ApartmentCard.module.css';
+import styles from '../../styles/Apartments/ApartmentCard_cell.module.css';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { IoEllipse } from 'react-icons/io5';
 import { BiHeart } from 'react-icons/bi';
@@ -6,7 +6,7 @@ import { MdPhoneIphone } from 'react-icons/md';
 import subway from '../../images/apartments/subway.svg';
 
 //@ts-ignore
-const ApartmentCard = (props) => {
+const ApartmentCard_cell = (props) => {
     return (
         <div className={styles.card}>
             <img className={styles.image} src={props.image} alt="" />
@@ -42,4 +42,4 @@ const ApartmentCard = (props) => {
     )
 }
 
-export default ApartmentCard;
+export default ApartmentCard_cell;
