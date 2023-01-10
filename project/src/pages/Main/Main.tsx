@@ -1,10 +1,10 @@
 import styles from '../../styles/Main/Main.module.css';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { IoOptionsOutline } from 'react-icons/io5';
-import arrow from '../../images/arrow.svg';
-import buttonArrow from '../../images/buttonArrow.svg'
 import { useState } from 'react';
 import { Link } from "react-router-dom";
+import { IoIosArrowDown } from 'react-icons/io';
+import { IoIosArrowForward } from 'react-icons/io';
 
 
 //@ts-ignore
@@ -49,7 +49,7 @@ const Main = ({ cities }) => {
                 <nav className={styles.nav}>
                     <div className={styles.selectCity}>
                         <div className={styles.inputTitle}>Город</div>
-                        <button className={styles.selectButton}>Выберите<img src={arrow} alt="" onClick={showCitiesBlock} /></button>
+                        <button className={styles.selectButton}>Выберите<IoIosArrowDown size='1.2em' onClick={showCitiesBlock} className={styles.arrowDown} /></button>
                         {
                             citiesList &&
                             <ul className={styles.citiesList}>
@@ -63,12 +63,12 @@ const Main = ({ cities }) => {
                         autoMenu ?
                             <div className={styles.selectRooms}>
                                 <div className={styles.inputTitle}>Вместимость</div>
-                                <button className={styles.selectButton}>Выберите<img src={arrow} alt="" /></button>
+                                <button className={styles.selectButton}>Выберите<IoIosArrowDown className={styles.arrowDown} size='1.2em' /></button>
                             </div>
                             :
                             <div className={styles.selectRooms}>
                                 <div className={styles.inputTitle}>Комнаты</div>
-                                <button className={styles.selectButton}>Выберите<img src={arrow} alt="" /></button>
+                                <button className={styles.selectButton}>Выберите<IoIosArrowDown className={styles.arrowDown} size='1.2em' /></button>
                             </div>
                     }
 
@@ -83,7 +83,7 @@ const Main = ({ cities }) => {
                     <div className={styles.showMap}>
                         На карте
                         <FaMapMarkerAlt className={styles.point} />
-                        <button>Показать <img src={buttonArrow} alt="" /></button>
+                        <button>Показать <IoIosArrowForward size='1.2em' /></button>
                     </div>
                 </nav>
             </div>

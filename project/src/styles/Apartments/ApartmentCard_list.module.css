@@ -4,6 +4,8 @@
     border-radius: 10px;
     display: flex;
     filter: drop-shadow(0px 20px 40px rgba(135, 124, 202, 0.15));
+    background-color: #FFFFFF;
+    margin-left: 80px;
 }
 
 .image {

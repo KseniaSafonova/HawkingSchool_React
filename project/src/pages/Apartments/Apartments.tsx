@@ -3,55 +3,50 @@ import ApartmentCard_list from "./ApartmentCard_list";
 import styles from '../../styles/Apartments/Apartments.module.css';
 import home from '../../images/home.svg';
 import { useState } from "react";
-import { FaMapMarkerAlt } from 'react-icons/fa';
 import { IoOptionsOutline } from 'react-icons/io5';
 import { IoIosArrowForward } from 'react-icons/io';
 import { IoIosArrowDown } from 'react-icons/io';
-import arrow from '../../images/arrow.svg';
-import buttonArrow from '../../images/buttonArrow.svg'
 
 //@ts-ignore
 const Apartments = ({ apartments }) => {
 
     const [list, setList] = useState(false);
 
-    const ChangeStyles = () => {
-        setList(!list);
+    const ChangeToList = () => {
+        setList(true);
     }
+
+    const ChangeToCells = () => {
+        setList(false);
+    }
+
 
     const showRoomsBlock = () => {
 
     }
-
     return (
         <div className={styles.container}>
-            <div className={styles.titleBlock}>
-                <div className={styles.link}>
-                    <img src={home} alt="" />
-                    <div className={styles.ellipse}></div>
-                    <div>Квартиры в Минске</div>
-                </div>
-                <div>Аренда квартир на сутки в Минске</div>
-                <div>Рекомендуем посмотреть</div>
-                <div>
-                    <button>Недорогие</button>
-                    <button>1-комнатные</button>
-                    <button>2-комнатные</button>
-                    <button>3-комнатные</button>
-                    <button>4-комнатные</button>
-                    <button>5-комнатные</button>
-                    <button>Заводской р.</button>
-                    <button>Ленинский р.</button>
-                    <button>Московский р.</button>
-                    <button>Октябрьский р.</button>
-                </div>
+            <div className={styles.titleBlock}></div>
+            <div className={styles.link}>
+                <img src={home} alt="" />
+                <div className={styles.ellipse}></div>
+                <p>Квартиры в Минске</p>
             </div>
-
+            <div className={styles.mainTitle}>Аренда квартир на сутки в Минске</div>
+            <div className={styles.secondTitle}>Рекомендуем посмотреть</div>
+            <div className={styles.buttons}>
+                <button className={styles.titleButton}>Недорогие</button>
+                <button className={styles.titleButton}>1-комнатные</button>
+                <button className={styles.titleButton}>2-комнатные</button>
+                <button className={styles.titleButton}>3-комнатные</button>
+                <button className={styles.titleButton}>4-комнатные</button>
+                <button className={styles.titleButton}>5-комнатные</button>
+            </div>
             <nav className={styles.nav}>
                 <div className={styles.selectRooms}>
                     <span className={styles.inputTitle}>Комнаты</span>
                     <button className={styles.selectButton}>Выберите
-                        <IoIosArrowDown onClick={showRoomsBlock} />
+                        <IoIosArrowDown onClick={showRoomsBlock} className={styles.arrowDown} />
                     </button>
                 </div>
                 <div className={styles.selectPrices}>
@@ -69,8 +64,11 @@ const Apartments = ({ apartments }) => {
                     <IoIosArrowForward />
                 </button>
             </nav>
-            <button onClick={ChangeStyles}>Список</button>
-            <button>Плитки</button>
+            <div className={styles.pageStyle}>
+                <button>По умолчанию</button>
+                <button onClick={ChangeToList}>Список</button>
+                <button onClick={ChangeToCells}>Плитки</button>
+            </div>
             <div className={list ? styles.listContainer : styles.cellContainer}>
 
                 {

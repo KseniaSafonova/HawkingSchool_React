@@ -53,6 +53,10 @@
     margin-left: 87px;
 }
 
+.persons p {
+    margin-left: 6px;
+}
+
 .rooms {
     height: 34.10493469238281px;
     width: 68px;

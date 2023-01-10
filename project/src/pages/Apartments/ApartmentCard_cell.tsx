@@ -4,6 +4,7 @@ import { IoEllipse } from 'react-icons/io5';
 import { BiHeart } from 'react-icons/bi';
 import { MdPhoneIphone } from 'react-icons/md';
 import subway from '../../images/apartments/subway.svg';
+import { RiUser3Fill } from 'react-icons/ri';
 
 //@ts-ignore
 const ApartmentCard_cell = (props) => {
@@ -14,7 +15,10 @@ const ApartmentCard_cell = (props) => {
                 <div className={styles.price}>{props.price} BYN
                     <div>за сутки</div>
                 </div>
-                <div className={styles.persons}>{props.persons}</div>
+                <div className={styles.persons}>
+                    <RiUser3Fill />
+                    <p>{props.persons}</p>
+                </div>
                 <div className={styles.rooms}>{props.rooms} комн.</div>
             </div>
             <div className={styles.address}>

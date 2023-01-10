@@ -91,6 +91,10 @@
     display: flex;
 }
 
+.arrowDown {
+    color: #664EF9;
+}
+
 .selectCity,
 .selectRooms {
     width: 190.5px;
