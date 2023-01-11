@@ -3,7 +3,8 @@ import { FaMapMarkerAlt } from 'react-icons/fa';
 import { IoEllipse } from 'react-icons/io5';
 import { BiHeart } from 'react-icons/bi';
 import { MdPhoneIphone } from 'react-icons/md';
-import subway from '../../images/apartments/subway.svg';
+import subwayList from '../../images/apartments/subwayList.svg';
+import { RiUser3Fill } from 'react-icons/ri';
 
 //@ts-ignore
 const ApartmentCard_list = (props) => {
@@ -16,7 +17,7 @@ const ApartmentCard_list = (props) => {
                         <div className={styles.title}>{props.title}</div>
                         <div className={styles.address}>
                             <FaMapMarkerAlt className={styles.point} />
-                            <span>{props.city}, {props.address}</span>
+                            <p>{props.city}, {props.address}</p>
                         </div>
                     </div>
                     <div className={styles.rightBlock}>
@@ -26,12 +27,17 @@ const ApartmentCard_list = (props) => {
                     </div>
                 </div>
                 <div className={styles.middleBlock}>
-                    <div className={styles.persons}>{props.persons}</div>
+                    <div className={styles.persons}>
+                        <RiUser3Fill />
+                        <p>{props.persons}</p>
+                    </div>
                     <div className={styles.rooms}>{props.rooms} комн.</div>
                     <div className={styles.subway}>
-                        <img src={subway} alt="" />
-                        <span>{props.subway}</span>
-                        <IoEllipse size='0.5em' className={styles.ellips} />
+                        <img src={subwayList} alt="" className={styles.subwayImg} />
+                        <p>{props.subway}</p>
+                    </div>
+                    <div className={styles.location}>
+                        <span>район:</span>
                         <span>{props.location}</span>
                     </div>
                 </div>

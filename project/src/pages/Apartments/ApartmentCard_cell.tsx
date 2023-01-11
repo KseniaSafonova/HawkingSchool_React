@@ -3,7 +3,7 @@ import { FaMapMarkerAlt } from 'react-icons/fa';
 import { IoEllipse } from 'react-icons/io5';
 import { BiHeart } from 'react-icons/bi';
 import { MdPhoneIphone } from 'react-icons/md';
-import subway from '../../images/apartments/subway.svg';
+import subwayCell from '../../images/apartments/subwayCell.svg';
 import { RiUser3Fill } from 'react-icons/ri';
 
 //@ts-ignore
@@ -26,7 +26,7 @@ const ApartmentCard_cell = (props) => {
                 <span>{props.city}, {props.address}</span>
             </div>
             <div className={styles.subway}>
-                <img src={subway} alt="" />
+                <img src={subwayCell} alt="" />
                 <span>{props.subway}</span>
                 <IoEllipse size='0.5em' className={styles.ellips} />
                 <span>{props.location}</span>

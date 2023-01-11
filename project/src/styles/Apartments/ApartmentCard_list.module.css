@@ -24,8 +24,6 @@
     margin-top: 19px;
 }
 
-.leftBlock {}
-
 .rightBlock {
     margin-left: 209px;
 }
@@ -80,6 +78,10 @@
     color: #686868;
 }
 
+.persons p {
+    margin-left: 6px;
+}
+
 .rooms {
     height: 34.10493469238281px;
     width: 68px;
@@ -94,11 +96,11 @@
     font-size: 14px;
     line-height: 17px;
     color: #686868;
+    margin-left: 15px;
 }
 
-.point,
-.ellips {
-    color: #BDBDBD;
+.point {
+    color: #664EF9;
 }
 
 .ellips {
@@ -112,24 +114,58 @@
     font-size: 16px;
     line-height: 19px;
     margin-top: 17px;
+    display: flex;
 }
 
-.address span {
-    /* margin-left: 11.5px; */
+.address p {
+    margin-left: 12px;
+    margin-top: -3px;
 }
 
 .subway {
-    margin-top: 11px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-
+    width: 122px;
+    height: 34.1px;
+    background: #F8F8F8;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #686868;
+    margin-left: 15px;
 }
 
-.subway span {
-    /* margin-left: 6px; */
+.subway p {
+    margin-left: 6px;
+}
+
+.subwayImg {
+    color: #664EF9;
+}
+
+.location {
+    width: 135px;
+    height: 34.1px;
+    background: #F8F8F8;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #664EF9;
+    margin-left: 15px;
+}
+
+.location span:nth-child(2) {
+    color: #686868;
 }
 
 .description {
