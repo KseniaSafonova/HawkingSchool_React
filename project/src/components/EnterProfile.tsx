@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from '../styles/LogIn.module.css';
 import point from '../images/login/point.svg';
 import { useForm, SubmitHandler } from "react-hook-form";
-import alert from '../images/login/alert.svg'
+import alert from '../images/login/alert.svg';
 
 interface EnterProfile {
     // OpenRegistration: () => void;

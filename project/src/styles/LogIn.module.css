@@ -257,7 +257,7 @@
 }
 
 .loginInput {
-    background-image: url('../images/login/user.svg');
+    background-image: url('../images/login/user.png');
     background-repeat: no-repeat;
     background-position-x: 25px;
     background-position-y: 15px;
@@ -275,12 +275,12 @@
 
 .loginInput:focus {
     border: 2px solid rgba(78, 100, 249, 0.8);
-    background-image: url('../images/login/userFocus.svg');
+    background-image: url('../images/login/userFocus.png');
     background-color: #FFFF;
 }
 
 .emailInput {
-    background-image: url('../images/login/mail.svg');
+    background-image: url('../images/login/email.png');
     background-repeat: no-repeat;
     background-position-x: 20px;
     background-position-y: 16px;
@@ -298,12 +298,12 @@
 
 .emailInput:focus {
     border: 2px solid rgba(78, 100, 249, 0.8);
-    background-image: url('../images/login/mailFocus.svg');
+    background-image: url('../images/login/emailFocus.png');
     background-color: #FFFF;
 }
 
 .passwordInput {
-    background-image: url('../images/login/password.svg');
+    background-image: url('../images/login/password.png');
     background-repeat: no-repeat;
     background-position-x: 22.5px;
     background-position-y: 15px;
@@ -321,7 +321,7 @@
 
 .passwordInput:focus {
     border: 2px solid rgba(78, 100, 249, 0.8);
-    background-image: url('../images/login/passwordFocus.svg');
+    background-image: url('../images/login/passwordFocus.png');
     background-color: #FFFF;
 }
 
