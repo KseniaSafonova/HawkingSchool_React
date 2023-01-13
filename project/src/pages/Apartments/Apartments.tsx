@@ -6,6 +6,12 @@ import { useState } from "react";
 import { IoOptionsOutline } from 'react-icons/io5';
 import { IoIosArrowForward } from 'react-icons/io';
 import { IoIosArrowDown } from 'react-icons/io';
+import { FaMapMarkerAlt } from 'react-icons/fa';
+import { SlSocialVkontakte } from 'react-icons/sl';
+import { ImFacebook } from 'react-icons/im';
+import { FaViber } from 'react-icons/fa';
+import { FaTelegramPlane } from 'react-icons/fa';
+import { ImWhatsapp } from 'react-icons/im';
 
 //@ts-ignore
 const Apartments = ({ apartments }) => {
@@ -25,7 +31,7 @@ const Apartments = ({ apartments }) => {
 
     }
     return (
-        <div className={styles.container}>
+        <div>
             <div className={styles.titleBlock}></div>
             <div className={styles.link}>
                 <img src={home} alt="" />
@@ -68,6 +74,7 @@ const Apartments = ({ apartments }) => {
                 <button>По умолчанию</button>
                 <button onClick={ChangeToList}>Список</button>
                 <button onClick={ChangeToCells}>Плитки</button>
+                <button><FaMapMarkerAlt />Показать на карте</button>
             </div>
             <div className={list ? styles.listContainer : styles.cellContainer}>
 
@@ -106,6 +113,27 @@ const Apartments = ({ apartments }) => {
                                     />)
                             }</>
                 }
+            </div>
+            <div className={styles.bottomBlock}>
+                <div>Номера страниц</div>
+                <div className={styles.socialNetworks}>
+                    <div className={styles.share}>Поделиться</div>
+                    <div className={styles.iconBlock}><SlSocialVkontakte /></div>
+                    <div className={styles.iconBlock}><ImFacebook /></div>
+                    <div className={styles.iconBlock}><FaViber /></div>
+                    <div className={styles.iconBlock}><FaTelegramPlane /></div>
+                    <div className={styles.iconBlock}><ImWhatsapp /></div>
+                </div>
+            </div>
+            <div className={styles.mapBlock}>
+                <div className={styles.backgroundImg}></div>
+                <div className={styles.topImg}></div>
+                <div className={styles.mapBlockContent}>
+                    <p>Показать найденные квартиры на карте</p>
+                    <p>Ищите новостройки рядом с работой,
+                        парком или родственниками</p>
+                    <button><FaMapMarkerAlt className={styles.buttonImg} /> Открыть карту</button>
+                </div>
             </div>
         </div>
     )

@@ -1,6 +1,5 @@
 import styles from '../../styles/Apartments/ApartmentCard_list.module.css';
 import { FaMapMarkerAlt } from 'react-icons/fa';
-import { IoEllipse } from 'react-icons/io5';
 import { BiHeart } from 'react-icons/bi';
 import { MdPhoneIphone } from 'react-icons/md';
 import subwayList from '../../images/apartments/subwayList.svg';
