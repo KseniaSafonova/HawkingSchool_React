@@ -335,3 +335,65 @@
     line-height: 17px;
     color: rgba(255, 255, 255, 0.7);
 }
+
+.mapBlock {
+    height: 309px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundImg {
+    background-image: url('../../images/background.png');
+    height: 309px;
+    width: 1440px;
+    position: absolute;
+}
+
+.topImg {
+    background-image: url('../../images/topImage.png');
+    filter: blur(2.5px);
+    width: 1440px;
+    height: 309px;
+    position: absolute;
+}
+
+.mapBlockContent {
+    position: absolute;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.mapBlockContent p:nth-child(2) {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    height: 38px;
+    width: 319px;
+    margin-left: 80px;
+}
+
+.mapBlockContent button {
+    height: 37px;
+    width: 167px;
+    border-radius: 19px;
+    border: 2px solid #FFFFFF;
+    background-color: #FFFFFF;
+    color: #1E2123;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.buttonImg {
+    fill: #FEC100;
+}

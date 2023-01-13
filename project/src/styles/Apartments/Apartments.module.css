@@ -280,7 +280,7 @@
     text-align: center;
 }
 
-.bottomBlockContent p:nth-child(2) {
+.mapBlockContent p:nth-child(2) {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -291,7 +291,7 @@
     margin-left: 80px;
 }
 
-.bottomBlockContent button {
+.mapBlockContent button {
     height: 37px;
     width: 167px;
     border-radius: 19px;

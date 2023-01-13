@@ -135,6 +135,16 @@ const Main = ({ cities }) => {
                     </ul>
                 </div>
             </section>
+            <div className={styles.mapBlock}>
+                <div className={styles.backgroundImg}></div>
+                <div className={styles.topImg}></div>
+                <div className={styles.mapBlockContent}>
+                    <p>Показать найденные квартиры на карте</p>
+                    <p>Ищите новостройки рядом с работой,
+                        парком или родственниками</p>
+                    <button><FaMapMarkerAlt className={styles.buttonImg} /> Открыть карту</button>
+                </div>
+            </div>
         </>
     )
 }
