@@ -5,6 +5,8 @@ import { useState } from 'react';
 import { Link } from "react-router-dom";
 import { IoIosArrowDown } from 'react-icons/io';
 import { IoIosArrowForward } from 'react-icons/io';
+import cardImg1 from '../../images/Main/cardImg1.png';
+import cardImg2 from '../../images/Main/cardImg2.png';
 
 
 //@ts-ignore
@@ -136,13 +138,45 @@ const Main = ({ cities }) => {
                 </div>
             </section>
             <div className={styles.mapBlock}>
-                <div className={styles.backgroundImg}></div>
-                <div className={styles.topImg}></div>
+                <div className={styles.backgroundMapImg}></div>
+                <div className={styles.topMapImg}></div>
                 <div className={styles.mapBlockContent}>
-                    <p>Показать найденные квартиры на карте</p>
-                    <p>Ищите новостройки рядом с работой,
-                        парком или родственниками</p>
+                    <div>Показать найденные квартиры на карте</div>
+                    <div>Ищите квартиры на сутки в центре города, возле парка или в живописном районе</div>
                     <button><FaMapMarkerAlt className={styles.buttonImg} /> Открыть карту</button>
+                </div>
+            </div>
+            <div className={styles.InfoforOwners}>
+                <div className={styles.infoCard}>
+
+                    <div className={styles.infoCardTitle}>
+                        <img src={cardImg1} alt="" />
+                        <div>Начните привлекать
+                            клиентов бесплатно!</div>
+                    </div>
+                    <div className={styles.infoCardDescription}>
+                        Пройдя простую регистрацию на сайте у Вас появится личный кабинет, в котором возможно бесплатно создавать и публиковать объявления на сайте.
+                    </div>
+                    <button>Разместить объявление</button>
+                </div>
+                <div className={styles.infoCard}>
+
+                    <div className={styles.infoCardTitle}>
+                        <img src={cardImg2} alt="" />
+                        <div>Поднимайте объявления</div>
+                    </div>
+                    <div className={styles.infoCardDescription}>
+                        Вы в любое время можете поднимать объявления вверх первой страницы каталога,
+                        они разместятся сразу после платных объявлений до тех пор, пока другой пользователь не повторит процедуру.
+                    </div>
+                    <button>Узнать стоимость услуги <IoIosArrowForward size='1.2em' /></button>
+                </div>
+                <div className={` ${styles.infoCard} ${styles.infoCardGold} `}>
+                    <div>Приоритет Gold</div>
+                    <div>Приоритетное размещение Gold позволяет закрепить ваше объявление в верхней части каталога!</div>
+                    <div>Gold объявления перемещаются
+                        каждые 5 мин на 1 позицию, что делает размещение одинаковым для всех.</div>
+                    <button>Еще о тарифе Gold <IoIosArrowForward size='1.2em' /></button>
                 </div>
             </div>
         </>
