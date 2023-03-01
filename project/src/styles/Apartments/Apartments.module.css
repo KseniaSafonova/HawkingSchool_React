@@ -9,7 +9,6 @@
 .link {
     display: flex;
     align-items: center;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
@@ -33,8 +32,6 @@
 
 .mainTitle {
     padding-top: 86px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 25px;
     line-height: 100%;
@@ -94,8 +91,6 @@
     padding-left: 100px;
     display: flex;
     align-items: center;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -126,8 +121,6 @@
 }
 
 .inputTitle {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 100%;
@@ -176,8 +169,6 @@
     border-radius: 22px;
     border: 2px solid #F8F8F8;
     background: #F8F8F8;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
@@ -191,8 +182,6 @@
     border-radius: 22px;
     background: #664EF9;
     border: 2px solid #664EF9;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
@@ -272,8 +261,6 @@
 .mapBlockContent {
     position: absolute;
     color: #FFFFFF;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
@@ -281,8 +268,6 @@
 }
 
 .mapBlockContent p:nth-child(2) {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -298,7 +283,6 @@
     border: 2px solid #FFFFFF;
     background-color: #FFFFFF;
     color: #1E2123;
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;

@@ -11,7 +11,6 @@
 }
 
 .companyName {
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
@@ -22,7 +21,6 @@
 .IPinfo {
     height: 78px;
     width: 297px;
-    font-style: normal;
     font-weight: 400;
     font-size: 11px;
     color: #8291A3;
@@ -40,7 +38,6 @@
 
 .menuLeft a {
     text-decoration: none;
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
@@ -50,7 +47,6 @@
 .apartments {
     margin-top: 39px;
     margin-left: 69px;
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
@@ -68,7 +64,6 @@
 
 .apartmentsList a {
     text-decoration: none;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -86,7 +81,6 @@
 }
 
 .menuRight a {
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     color: #8291A3;
@@ -101,7 +95,6 @@
     margin-left: 407px;
     margin-top: -55px;
     display: flex;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;

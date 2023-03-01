@@ -35,9 +35,6 @@
 
 .title {
     margin-top: 50px;
-    /* padding-left: 120px; */
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
@@ -47,8 +44,6 @@
 .description {
     height: 34px;
     width: 310px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -70,13 +65,10 @@
     box-sizing: border-box;
     background-color: #FFD54F;
     border: 2px solid #FFD54F;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     margin-left: 0px;
-    /* margin-top: 38px; */
     margin-top: 20px;
     text-indent: 0;
 }
@@ -94,8 +86,6 @@
 
 .rememberMe {
     margin-left: 8px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -105,8 +95,6 @@
 .password a {
     margin-left: 38px;
     text-decoration: none;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -152,13 +140,7 @@
     background-color: #FFD54F;
 }
 
-/* .checkbox:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
-} */
-
 .checkbox:checked+.slider:before {
-    /* -webkit-transform: translateX(14px);
-    -ms-transform: translateX(14px); */
     transform: translateX(14px);
 }
 
@@ -171,14 +153,11 @@
 }
 
 .createAccount {
-    /* margin-top: 50px; */
     margin-top: 30px;
     margin-left: 75px;
 }
 
 .createAccount span {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -186,8 +165,6 @@
 }
 
 .link {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -220,8 +197,6 @@
 .userMust {
     height: 231px;
     width: 388px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
@@ -245,8 +220,6 @@
 }
 
 .login {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -338,7 +311,6 @@
     align-items: center;
     background-color: #EB5757;
     margin-top: 10px;
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;

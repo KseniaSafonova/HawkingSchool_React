@@ -13,8 +13,6 @@
 }
 
 .title {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
@@ -26,8 +24,6 @@
 }
 
 .description {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -50,7 +46,6 @@
     width: 125px;
     background: #F8F8F8;
     border-radius: 18px;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -71,7 +66,6 @@
     background: rgba(102, 78, 249, 0.1);
     border-radius: 17px;
     border: none;
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;

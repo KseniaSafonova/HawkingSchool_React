@@ -9,7 +9,6 @@
 .titleBlockContent {
     height: 280px;
     margin-left: 290px;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     position: relative;
@@ -35,8 +34,6 @@
 
 .title {
     margin-top: 25px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 100%;
@@ -58,8 +55,6 @@
     justify-content: center;
     box-sizing: border-box;
     background: rgba(102, 78, 249, 0.1);
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -126,8 +121,6 @@
 }
 
 .readMore {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
