@@ -420,12 +420,18 @@
     background: linear-gradient(105.54deg, #FFD54F 33.53%, #FEC100 94.13%)
 }
 
-.infoCardTitle {
+.infoCardTopBlock {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
     color: #664EF9;
     display: flex;
+    margin-top: 27px;
+}
+
+.infoCardTopBlock div {
+    width: 200px;
+    margin-top: 27px;
 }
 
 .infoCardDescription {
@@ -433,6 +439,11 @@
     font-size: 14px;
     line-height: 17px;
     color: #1E2123;
+    margin-left: 37px;
+}
+
+.infoCardDescription span {
+    font-weight: 600;
 }
 
 .infoCard button {
@@ -445,6 +456,11 @@
     justify-content: space-evenly;
     background: linear-gradient(106.06deg, #FFD54F 1.12%, #FEC100 97.96%);
     box-shadow: 0px 15px 40px rgba(254, 193, 0, 0.15);
+    margin-top: 34px;
+    margin-left: 37px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
 }
 
 .infoCard button:nth-child(4) {

@@ -18,6 +18,7 @@ import { useSelector } from 'react-redux'
 import Validation from './components/Validation';
 import EnterProfile from './components/EnterProfile';
 import Apartments from './pages/Apartments/Apartments';
+import styles from './App.module.css';
 
 //@ts-ignore
 function App() {
@@ -26,7 +27,7 @@ function App() {
   const apartments = useSelector((state: RootState) => state.apartments.value)
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className={styles.App}>
         <Header />
         <HeaderNav />
         {/* <Error /> */}

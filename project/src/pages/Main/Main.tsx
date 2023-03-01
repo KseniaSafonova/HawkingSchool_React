@@ -148,25 +148,24 @@ const Main = ({ cities }) => {
             </div>
             <div className={styles.InfoforOwners}>
                 <div className={styles.infoCard}>
-
-                    <div className={styles.infoCardTitle}>
+                    <div className={styles.infoCardTopBlock}>
                         <img src={cardImg1} alt="" />
                         <div>Начните привлекать
                             клиентов бесплатно!</div>
                     </div>
                     <div className={styles.infoCardDescription}>
-                        Пройдя простую регистрацию на сайте у Вас появится личный кабинет, в котором возможно бесплатно создавать и публиковать объявления на сайте.
+                        Пройдя простую регистрацию на сайте у Вас появится личный кабинет,
+                        в котором возможно <span>бесплатно создавать и публиковать</span> объявления на сайте.
                     </div>
-                    <button>Разместить объявление</button>
+                    <button>+ Разместить объявление</button>
                 </div>
                 <div className={styles.infoCard}>
-
-                    <div className={styles.infoCardTitle}>
+                    <div className={styles.infoCardTopBlock}>
                         <img src={cardImg2} alt="" />
                         <div>Поднимайте объявления</div>
                     </div>
                     <div className={styles.infoCardDescription}>
-                        Вы в любое время можете поднимать объявления вверх первой страницы каталога,
+                        Вы в любое время можете <span>поднимать</span> объявления вверх <span>первой страницы каталога</span>,
                         они разместятся сразу после платных объявлений до тех пор, пока другой пользователь не повторит процедуру.
                     </div>
                     <button>Узнать стоимость услуги <IoIosArrowForward size='1.2em' /></button>
